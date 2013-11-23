@@ -8,6 +8,7 @@ import com.notnoop.exceptions.RuntimeIOException;
 
 public interface NotificationService {
 
-	void sendWarning(User user) throws RuntimeIOException, InvalidSSLConfig, IOException;
+	void sendWarning(User user) throws RuntimeIOException;
+
 
 }
