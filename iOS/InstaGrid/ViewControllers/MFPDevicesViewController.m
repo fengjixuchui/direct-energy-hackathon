@@ -9,6 +9,7 @@
 #import "MFPDevicesViewController.h"
 #import "MFPDevicesService.h"
 #import "MainManager.h"
+#import "MFPDeviceCell.h"
 
 
 @interface MFPDevicesViewController ()
@@ -43,6 +44,8 @@ UICollectionViewDelegate>
         self.devicesArray = devices;
     }];
 }
+
+#pragma mark lifecycle
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -80,7 +83,9 @@ UICollectionViewDelegate>
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"deviceCell" forIndexPath:indexPath];
+    MFPDeviceCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"deviceCell" forIndexPath:indexPath];
+    
+    [cell bindObject:_devicesArray[indexPath.row]];
     
     return cell;
 }

@@ -9,6 +9,14 @@
 #import "MFPConsoCell.h"
 
 
+@interface MFPConsoCell ()
+
+@property (strong, nonatomic) IBOutlet UIImage *deviceImage;
+@property (strong, nonatomic) IBOutlet UILabel *deviceLabel;
+
+@end
+
+
 @implementation MFPConsoCell
 
 - (id)initWithFrame:(CGRect)frame
@@ -18,6 +26,11 @@
         // Initialization code
     }
     return self;
+}
+
+- (void)bindObject:(ConsoModel *)object
+{
+    // TODO:
 }
 
 @end
