@@ -31,7 +31,7 @@ public class OrderController {
 	}
 	
 	
-	@RequestMapping(method = RequestMethod.POST, produces = { MediaType.APPLICATION_JSON_VALUE })
+	@RequestMapping(method = RequestMethod.DELETE, produces = { MediaType.APPLICATION_JSON_VALUE })
 	@ResponseStatus(HttpStatus.OK)
 	public void cancelOrder(User user){
 		effacementService.cancelOrder(user);
