@@ -10,6 +10,9 @@
 #import "NSObject+CoeurHelper.h"
 #import <AFNetworking.h>
 
+NSString *const aliveURL = @"http://62.210.131.112:8081/instagrid/api/v1/alive";
+NSString *const devicesURL = @"http://62.210.131.112:8081/instagrid/api/v1/devices";
+
 
 @implementation MFPDevicesService
 

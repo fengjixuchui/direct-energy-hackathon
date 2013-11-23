@@ -23,8 +23,6 @@
 		C84F202C18401CDC001D89D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C84F202A18401CDC001D89D1 /* InfoPlist.strings */; };
 		C84F202E18401CDC001D89D1 /* InstaGridTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F202D18401CDC001D89D1 /* InstaGridTests.m */; };
 		C84F20421840311D001D89D1 /* NSObject+CoeurHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F20411840311D001D89D1 /* NSObject+CoeurHelper.m */; };
-		C84F20461840BEC0001D89D1 /* MFPAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F20441840BEC0001D89D1 /* MFPAuthViewController.m */; };
-		C84F20471840BEC0001D89D1 /* MFPAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84F20451840BEC0001D89D1 /* MFPAuthViewController.xib */; };
 		C84F204B1840C016001D89D1 /* MFPConsoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F20491840C016001D89D1 /* MFPConsoViewController.m */; };
 		C84F204C1840C016001D89D1 /* MFPConsoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84F204A1840C016001D89D1 /* MFPConsoViewController.xib */; };
 		C84F20501840C03B001D89D1 /* MFPDevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F204E1840C03B001D89D1 /* MFPDevicesViewController.m */; };
@@ -33,11 +31,22 @@
 		C84F205B1840C0ED001D89D1 /* MFPHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84F20591840C0ED001D89D1 /* MFPHomeViewController.xib */; };
 		C84F205F1840C1DB001D89D1 /* MFPTutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F205D1840C1DB001D89D1 /* MFPTutoViewController.m */; };
 		C84F20601840C1DB001D89D1 /* MFPTutoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84F205E1840C1DB001D89D1 /* MFPTutoViewController.xib */; };
-		C865A13E1840F5D200B64BB3 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A13D1840F5D200B64BB3 /* test.png */; };
 		C865A1411841026300B64BB3 /* MFPDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C865A1401841026300B64BB3 /* MFPDeviceCell.m */; };
 		C865A1431841028500B64BB3 /* MFPDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C865A1421841028500B64BB3 /* MFPDeviceCell.xib */; };
 		C865A146184110F600B64BB3 /* NonAnimatedSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C865A145184110F600B64BB3 /* NonAnimatedSegue.m */; };
 		C865A14A1841175B00B64BB3 /* MainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C865A1491841175B00B64BB3 /* MainManager.m */; };
+		C865A15418411DB800B64BB3 /* washing_machine.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A14B18411DB800B64BB3 /* washing_machine.png */; };
+		C865A15518411DB800B64BB3 /* air_conditioning_internal.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A14C18411DB800B64BB3 /* air_conditioning_internal.png */; };
+		C865A15618411DB800B64BB3 /* boiler_flame.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A14D18411DB800B64BB3 /* boiler_flame.png */; };
+		C865A15718411DB800B64BB3 /* dryer.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A14E18411DB800B64BB3 /* dryer.png */; };
+		C865A15818411DB800B64BB3 /* electric_car.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A14F18411DB800B64BB3 /* electric_car.png */; };
+		C865A15918411DB800B64BB3 /* freezer_B.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15018411DB800B64BB3 /* freezer_B.png */; };
+		C865A15A18411DB800B64BB3 /* lightbulb.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15118411DB800B64BB3 /* lightbulb.png */; };
+		C865A15B18411DB800B64BB3 /* plug.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15218411DB800B64BB3 /* plug.png */; };
+		C865A15C18411DB800B64BB3 /* tv_flat_play.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15318411DB800B64BB3 /* tv_flat_play.png */; };
+		C865A15F1841225700B64BB3 /* €€_tuto.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15D1841225700B64BB3 /* €€_tuto.png */; };
+		C865A1601841225700B64BB3 /* dryer_light_ac_tuto.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15E1841225700B64BB3 /* dryer_light_ac_tuto.png */; };
+		C865A1621841229B00B64BB3 /* €_tuto.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A1611841229B00B64BB3 /* €_tuto.png */; };
 		C8F824021840DC080093A9AC /* MFPDevicesService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F824011840DC080093A9AC /* MFPDevicesService.m */; };
 		C8F824051840DC860093A9AC /* DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F824041840DC860093A9AC /* DeviceModel.m */; };
 /* End PBXBuildFile section */
@@ -77,9 +86,6 @@
 		C84F203B1840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C84F20401840311D001D89D1 /* NSObject+CoeurHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CoeurHelper.h"; sourceTree = "<group>"; };
 		C84F20411840311D001D89D1 /* NSObject+CoeurHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CoeurHelper.m"; sourceTree = "<group>"; };
-		C84F20431840BEC0001D89D1 /* MFPAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPAuthViewController.h; sourceTree = "<group>"; };
-		C84F20441840BEC0001D89D1 /* MFPAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPAuthViewController.m; sourceTree = "<group>"; };
-		C84F20451840BEC0001D89D1 /* MFPAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPAuthViewController.xib; sourceTree = "<group>"; };
 		C84F20481840C016001D89D1 /* MFPConsoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPConsoViewController.h; sourceTree = "<group>"; };
 		C84F20491840C016001D89D1 /* MFPConsoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPConsoViewController.m; sourceTree = "<group>"; };
 		C84F204A1840C016001D89D1 /* MFPConsoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPConsoViewController.xib; sourceTree = "<group>"; };
@@ -92,7 +98,6 @@
 		C84F205C1840C1DB001D89D1 /* MFPTutoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPTutoViewController.h; sourceTree = "<group>"; };
 		C84F205D1840C1DB001D89D1 /* MFPTutoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPTutoViewController.m; sourceTree = "<group>"; };
 		C84F205E1840C1DB001D89D1 /* MFPTutoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPTutoViewController.xib; sourceTree = "<group>"; };
-		C865A13D1840F5D200B64BB3 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		C865A13F1841026300B64BB3 /* MFPDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPDeviceCell.h; sourceTree = "<group>"; };
 		C865A1401841026300B64BB3 /* MFPDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPDeviceCell.m; sourceTree = "<group>"; };
 		C865A1421841028500B64BB3 /* MFPDeviceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPDeviceCell.xib; sourceTree = "<group>"; };
@@ -100,6 +105,18 @@
 		C865A145184110F600B64BB3 /* NonAnimatedSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonAnimatedSegue.m; sourceTree = "<group>"; };
 		C865A1481841175B00B64BB3 /* MainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainManager.h; sourceTree = "<group>"; };
 		C865A1491841175B00B64BB3 /* MainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainManager.m; sourceTree = "<group>"; };
+		C865A14B18411DB800B64BB3 /* washing_machine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = washing_machine.png; sourceTree = "<group>"; };
+		C865A14C18411DB800B64BB3 /* air_conditioning_internal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = air_conditioning_internal.png; sourceTree = "<group>"; };
+		C865A14D18411DB800B64BB3 /* boiler_flame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boiler_flame.png; sourceTree = "<group>"; };
+		C865A14E18411DB800B64BB3 /* dryer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dryer.png; sourceTree = "<group>"; };
+		C865A14F18411DB800B64BB3 /* electric_car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = electric_car.png; sourceTree = "<group>"; };
+		C865A15018411DB800B64BB3 /* freezer_B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = freezer_B.png; sourceTree = "<group>"; };
+		C865A15118411DB800B64BB3 /* lightbulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightbulb.png; sourceTree = "<group>"; };
+		C865A15218411DB800B64BB3 /* plug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plug.png; sourceTree = "<group>"; };
+		C865A15318411DB800B64BB3 /* tv_flat_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tv_flat_play.png; sourceTree = "<group>"; };
+		C865A15D1841225700B64BB3 /* €€_tuto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "€€_tuto.png"; sourceTree = "<group>"; };
+		C865A15E1841225700B64BB3 /* dryer_light_ac_tuto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dryer_light_ac_tuto.png; sourceTree = "<group>"; };
+		C865A1611841229B00B64BB3 /* €_tuto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "€_tuto.png"; sourceTree = "<group>"; };
 		C8F824001840DC080093A9AC /* MFPDevicesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPDevicesService.h; sourceTree = "<group>"; };
 		C8F824011840DC080093A9AC /* MFPDevicesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPDevicesService.m; sourceTree = "<group>"; };
 		C8F824031840DC860093A9AC /* DeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceModel.h; sourceTree = "<group>"; };
@@ -223,9 +240,6 @@
 				C84F205C1840C1DB001D89D1 /* MFPTutoViewController.h */,
 				C84F205D1840C1DB001D89D1 /* MFPTutoViewController.m */,
 				C84F205E1840C1DB001D89D1 /* MFPTutoViewController.xib */,
-				C84F20431840BEC0001D89D1 /* MFPAuthViewController.h */,
-				C84F20441840BEC0001D89D1 /* MFPAuthViewController.m */,
-				C84F20451840BEC0001D89D1 /* MFPAuthViewController.xib */,
 				C84F204D1840C03B001D89D1 /* MFPDevicesViewController.h */,
 				C84F204E1840C03B001D89D1 /* MFPDevicesViewController.m */,
 				C84F204F1840C03B001D89D1 /* MFPDevicesViewController.xib */,
@@ -270,7 +284,18 @@
 		C84F203F18402A11001D89D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C865A13D1840F5D200B64BB3 /* test.png */,
+				C865A14B18411DB800B64BB3 /* washing_machine.png */,
+				C865A14C18411DB800B64BB3 /* air_conditioning_internal.png */,
+				C865A14D18411DB800B64BB3 /* boiler_flame.png */,
+				C865A14E18411DB800B64BB3 /* dryer.png */,
+				C865A14F18411DB800B64BB3 /* electric_car.png */,
+				C865A15018411DB800B64BB3 /* freezer_B.png */,
+				C865A15118411DB800B64BB3 /* lightbulb.png */,
+				C865A15218411DB800B64BB3 /* plug.png */,
+				C865A15318411DB800B64BB3 /* tv_flat_play.png */,
+				C865A1611841229B00B64BB3 /* €_tuto.png */,
+				C865A15D1841225700B64BB3 /* €€_tuto.png */,
+				C865A15E1841225700B64BB3 /* dryer_light_ac_tuto.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -367,16 +392,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C865A1621841229B00B64BB3 /* €_tuto.png in Resources */,
 				C84F201B18401CDC001D89D1 /* Images.xcassets in Resources */,
+				C865A15A18411DB800B64BB3 /* lightbulb.png in Resources */,
 				C84F204C1840C016001D89D1 /* MFPConsoViewController.xib in Resources */,
-				C865A13E1840F5D200B64BB3 /* test.png in Resources */,
+				C865A1601841225700B64BB3 /* dryer_light_ac_tuto.png in Resources */,
 				C84F20601840C1DB001D89D1 /* MFPTutoViewController.xib in Resources */,
+				C865A15918411DB800B64BB3 /* freezer_B.png in Resources */,
+				C865A15518411DB800B64BB3 /* air_conditioning_internal.png in Resources */,
 				C84F201318401CDC001D89D1 /* Main.storyboard in Resources */,
-				C84F20471840BEC0001D89D1 /* MFPAuthViewController.xib in Resources */,
+				C865A15F1841225700B64BB3 /* €€_tuto.png in Resources */,
+				C865A15C18411DB800B64BB3 /* tv_flat_play.png in Resources */,
+				C865A15618411DB800B64BB3 /* boiler_flame.png in Resources */,
+				C865A15718411DB800B64BB3 /* dryer.png in Resources */,
+				C865A15B18411DB800B64BB3 /* plug.png in Resources */,
 				C84F20511840C03B001D89D1 /* MFPDevicesViewController.xib in Resources */,
 				C84F205B1840C0ED001D89D1 /* MFPHomeViewController.xib in Resources */,
 				C84F200A18401CDC001D89D1 /* InfoPlist.strings in Resources */,
+				C865A15818411DB800B64BB3 /* electric_car.png in Resources */,
 				C865A1431841028500B64BB3 /* MFPDeviceCell.xib in Resources */,
+				C865A15418411DB800B64BB3 /* washing_machine.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +476,6 @@
 				C84F200C18401CDC001D89D1 /* main.m in Sources */,
 				C84F205F1840C1DB001D89D1 /* MFPTutoViewController.m in Sources */,
 				C865A14A1841175B00B64BB3 /* MainManager.m in Sources */,
-				C84F20461840BEC0001D89D1 /* MFPAuthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

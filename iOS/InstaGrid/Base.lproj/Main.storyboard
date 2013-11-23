@@ -62,7 +62,6 @@
                 <viewController id="vXZ-lx-hvc" customClass="MFPHomeViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Accueil Direct Energie" id="nIn-sy-zI5"/>
                     <connections>
-                        <segue destination="FiA-lv-5ka" kind="push" identifier="ToAuth" id="LUn-fT-39y"/>
                         <segue destination="4Q8-Gu-vqR" kind="push" identifier="ToConso" id="HRM-Wt-YHa"/>
                         <segue destination="4Q8-Gu-vqR" kind="custom" identifier="ToConsoNonAnimated" customClass="NonAnimatedSegue" id="apW-1g-M1w"/>
                     </connections>
@@ -70,16 +69,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-103" y="-731"/>
-        </scene>
-        <!--Auth View Controller - Authentification-->
-        <scene sceneID="ehw-xz-pG8">
-            <objects>
-                <viewController id="FiA-lv-5ka" customClass="MFPAuthViewController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Authentification" id="cBR-nY-cCX"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="19G-gt-UND" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="439" y="-1645"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
