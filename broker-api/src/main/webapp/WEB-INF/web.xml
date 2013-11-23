@@ -29,7 +29,7 @@
 
 	<servlet-mapping>
 		<servlet-name>apiDispatchingServlet</servlet-name>
-		<url-pattern>/api/*</url-pattern>
+		<url-pattern>*/api/*</url-pattern>
 	</servlet-mapping>
 
 <!-- 	<filter> -->
