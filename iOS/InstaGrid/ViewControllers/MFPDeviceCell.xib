@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="160" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="test.png" translatesAutoresizingMaskIntoConstraints="NO" id="MqX-Q0-naa">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="plug.png" translatesAutoresizingMaskIntoConstraints="NO" id="MqX-Q0-naa">
                         <rect key="frame" x="-80" y="-10" width="320" height="120"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </imageView>
@@ -31,6 +31,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="test.png" width="152" height="152"/>
+        <image name="plug.png" width="512" height="512"/>
     </resources>
 </document>

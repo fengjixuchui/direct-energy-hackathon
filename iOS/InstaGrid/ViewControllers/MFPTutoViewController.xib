@@ -37,7 +37,7 @@
                     <rect key="frame" x="0.0" y="63" width="320" height="466"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Im-Ja-oN3">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plug.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Im-Ja-oN3">
                             <rect key="frame" x="27" y="0.0" width="244" height="244"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
@@ -48,7 +48,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test.png" translatesAutoresizingMaskIntoConstraints="NO" id="F2u-XM-bRM">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plug.png" translatesAutoresizingMaskIntoConstraints="NO" id="F2u-XM-bRM">
                             <rect key="frame" x="320" y="0.0" width="244" height="244"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
@@ -59,7 +59,7 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test.png" translatesAutoresizingMaskIntoConstraints="NO" id="OzO-Jl-EGg">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plug.png" translatesAutoresizingMaskIntoConstraints="NO" id="OzO-Jl-EGg">
                             <rect key="frame" x="640" y="0.0" width="244" height="244"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
@@ -107,6 +107,6 @@
         </view>
     </objects>
     <resources>
-        <image name="test.png" width="152" height="152"/>
+        <image name="plug.png" width="512" height="512"/>
     </resources>
 </document>
