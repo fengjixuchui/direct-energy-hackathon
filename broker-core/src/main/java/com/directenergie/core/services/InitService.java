@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -11,6 +12,7 @@ import com.directenergie.core.model.Device;
 import com.directenergie.core.model.DeviceDefinition;
 import com.directenergie.core.model.DeviceType;
 import com.directenergie.core.model.User;
+import com.directenergie.core.repository.UserRepository;
 
 @Named
 public class InitService {
@@ -18,18 +20,24 @@ public class InitService {
 	@Inject
 	private UserService userService;
 
+	@Inject
+	private UserRepository userRepository;
+
+	@PostConstruct
 	public List<User> createUsers() {
 		User user1 = userService.addUser("12345678234234",
 				"3eb5f7d44c31dde66c4c8eb1b3bd643c6fa04755be05e96b63088d496abc1e57");
-		user1.setDevices(createDevices());
+		user1.getDevices().addAll(createDevices());
 		user1.setLatitude(getPositionRandom());
 		user1.setLongitude(getPositionRandom());
+		userRepository.save(user1);
 
 		User user2 = userService.addUser("67786546324456",
 				"8fa4521f25a03c4de2a94dcf74b937cdc9add69e6e1f045d721926a62ef7eecf");
-		user2.setDevices(createDevices());
+		user2.getDevices().addAll(createDevices());
 		user2.setLatitude(getPositionRandom());
 		user2.setLongitude(getPositionRandom());
+		userRepository.save(user2);
 
 		return Arrays.asList(user1, user2);
 	}

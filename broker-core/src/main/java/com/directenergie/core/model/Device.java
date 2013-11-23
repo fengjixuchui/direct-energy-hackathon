@@ -1,5 +1,6 @@
 package com.directenergie.core.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 
@@ -17,7 +18,7 @@ public class Device extends AbstractEntity {
 
 	private boolean inUse;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.PERSIST)
 	private DeviceDefinition deviceDefinition;
 
 }
