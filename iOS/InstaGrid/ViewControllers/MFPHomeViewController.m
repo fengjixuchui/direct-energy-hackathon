@@ -46,6 +46,11 @@ UICollectionViewDelegate>
     //[wheel addTarget:self action:@selector(wheelDidChangeValue:) forControlEvents:UIControlEventValueChanged];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
 #pragma mark setters & getters
 
 - (void)setDevicesArray:(NSArray *)devicesArray

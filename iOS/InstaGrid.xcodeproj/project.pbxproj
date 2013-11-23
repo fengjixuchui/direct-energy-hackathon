@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B23D8C6152846CF894E4EAC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB360A5D873847BF8E0CC5B6 /* libPods.a */; };
+		545D16AD18416A5A009BE32C /* homescreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 545D16AC18416A59009BE32C /* homescreen.png */; };
 		C84F200018401CDC001D89D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F1FFF18401CDC001D89D1 /* Foundation.framework */; };
 		C84F200218401CDC001D89D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F200118401CDC001D89D1 /* CoreGraphics.framework */; };
 		C84F200418401CDC001D89D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F200318401CDC001D89D1 /* UIKit.framework */; };
@@ -53,7 +54,6 @@
 		C8CDCA0118412EC900C2903E /* MFPConsoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDCA0018412EC900C2903E /* MFPConsoCell.m */; };
 		C8CDCA0318412EE500C2903E /* MFPConsoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8CDCA0218412EE500C2903E /* MFPConsoCell.xib */; };
 		C8CDCA0618412F4500C2903E /* ConsoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDCA0518412F4500C2903E /* ConsoModel.m */; };
-		C8CDCA0A1841306200C2903E /* homescreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C8CDCA091841306200C2903E /* homescreen.png */; };
 		C8CDCA0D1841339700C2903E /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDCA0C1841339700C2903E /* ScrollView.m */; };
 		C8F824021840DC080093A9AC /* MFPDevicesService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F824011840DC080093A9AC /* MFPDevicesService.m */; };
 		C8F824051840DC860093A9AC /* DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F824041840DC860093A9AC /* DeviceModel.m */; };
@@ -70,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		545D16AC18416A59009BE32C /* homescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homescreen.png; path = InstaGrid/Resources/homescreen.png; sourceTree = "<group>"; };
 		65296AD14EA646EABB1B87B8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BB360A5D873847BF8E0CC5B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84F1FFC18401CDC001D89D1 /* InstaGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,7 +137,6 @@
 		C8CDCA0218412EE500C2903E /* MFPConsoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPConsoCell.xib; sourceTree = "<group>"; };
 		C8CDCA0418412F4500C2903E /* ConsoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoModel.h; sourceTree = "<group>"; };
 		C8CDCA0518412F4500C2903E /* ConsoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoModel.m; sourceTree = "<group>"; };
-		C8CDCA091841306200C2903E /* homescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homescreen.png; sourceTree = "<group>"; };
 		C8CDCA0B1841339700C2903E /* ScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollView.h; sourceTree = "<group>"; };
 		C8CDCA0C1841339700C2903E /* ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollView.m; sourceTree = "<group>"; };
 		C8F824001840DC080093A9AC /* MFPDevicesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPDevicesService.h; sourceTree = "<group>"; };
@@ -173,6 +173,7 @@
 		C84F1FF318401CDC001D89D1 = {
 			isa = PBXGroup;
 			children = (
+				545D16AC18416A59009BE32C /* homescreen.png */,
 				C84F200518401CDC001D89D1 /* InstaGrid */,
 				C84F202718401CDC001D89D1 /* InstaGridTests */,
 				C84F1FFE18401CDC001D89D1 /* Frameworks */,
@@ -314,7 +315,6 @@
 		C84F203F18402A11001D89D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C8CDCA091841306200C2903E /* homescreen.png */,
 				C8CDCA081841301A00C2903E /* tuto */,
 				C8CDCA0718412FEF00C2903E /* equipment */,
 			);
@@ -456,7 +456,7 @@
 				C84F201B18401CDC001D89D1 /* Images.xcassets in Resources */,
 				C865A15A18411DB800B64BB3 /* lightbulb.png in Resources */,
 				C84F204C1840C016001D89D1 /* MFPConsoViewController.xib in Resources */,
-				C8CDCA0A1841306200C2903E /* homescreen.png in Resources */,
+				545D16AD18416A5A009BE32C /* homescreen.png in Resources */,
 				C865A1601841225700B64BB3 /* dryer_light_ac_tuto.png in Resources */,
 				C84F20601840C1DB001D89D1 /* MFPTutoViewController.xib in Resources */,
 				C865A15918411DB800B64BB3 /* freezer_B.png in Resources */,
@@ -672,13 +672,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Romain BIARD (GBC4776WTG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Romain BIARD (GBC4776WTG)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaGrid/InstaGrid-Prefix.pch";
 				INFOPLIST_FILE = "InstaGrid/InstaGrid-Info.plist";
 				PRODUCT_NAME = InstaGrid;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ACCA68E8-DE15-47B5-9B4D-59CBA6FFECAE";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -690,13 +690,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Romain BIARD (GBC4776WTG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Romain BIARD (GBC4776WTG)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaGrid/InstaGrid-Prefix.pch";
 				INFOPLIST_FILE = "InstaGrid/InstaGrid-Info.plist";
 				PRODUCT_NAME = InstaGrid;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ACCA68E8-DE15-47B5-9B4D-59CBA6FFECAE";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

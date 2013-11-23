@@ -43,7 +43,7 @@ UICollectionViewDelegate>
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     MainManager *manager = [MainManager sharedInstance];
     if (manager.instaGridAccepted == NO) {
         if ([self isMovingToParentViewController])
