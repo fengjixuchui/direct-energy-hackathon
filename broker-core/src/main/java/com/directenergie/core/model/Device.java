@@ -18,7 +18,7 @@ public class Device extends AbstractEntity {
 
 	private boolean inUse;
 
-	@OneToOne(cascade = CascadeType.PERSIST)
+	@OneToOne(cascade = CascadeType.ALL)
 	private DeviceDefinition deviceDefinition;
 
 }

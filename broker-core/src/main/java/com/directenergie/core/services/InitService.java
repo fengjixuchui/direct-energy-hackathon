@@ -63,6 +63,7 @@ public class InitService {
 		devdef2.setType(DeviceType.LIGHT);
 		result2.setDeviceDefinition(devdef2);
 		result2.setInUse(false);
+		devices.add(result2);
 
 		Device result3 = new Device();
 		DeviceDefinition devDef3 = new DeviceDefinition();
@@ -70,6 +71,7 @@ public class InitService {
 		devDef3.setType(DeviceType.BOILER);
 		result3.setDeviceDefinition(devDef3);
 		result3.setInUse(true);
+		devices.add(result3);
 
 		Device result4 = new Device();
 		DeviceDefinition devDef4 = new DeviceDefinition();
@@ -77,6 +79,7 @@ public class InitService {
 		devDef4.setType(DeviceType.WASHING_MACHINE);
 		result4.setDeviceDefinition(devDef4);
 		result4.setInUse(true);
+		devices.add(result4);
 
 		return devices;
 	}
