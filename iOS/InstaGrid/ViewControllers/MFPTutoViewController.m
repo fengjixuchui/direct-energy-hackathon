@@ -46,7 +46,7 @@
     [super viewDidAppear:animated];
     
     // TODO: find a better place to update the contentSize
-    self.tutoScrollView.contentSize = CGSizeMake(self.tutoScrollView.bounds.size.width * 3, self.tutoScrollView.bounds.size.height);
+    self.tutoScrollView.contentSize = CGSizeMake(self.tutoScrollView.bounds.size.width * 4, self.tutoScrollView.bounds.size.height);
 }
 
 #pragma mark - UIScrollViewDelegate methods

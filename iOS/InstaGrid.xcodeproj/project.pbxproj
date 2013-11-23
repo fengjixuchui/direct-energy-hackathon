@@ -44,6 +44,9 @@
 		C865A15A18411DB800B64BB3 /* lightbulb.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15118411DB800B64BB3 /* lightbulb.png */; };
 		C865A15B18411DB800B64BB3 /* plug.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15218411DB800B64BB3 /* plug.png */; };
 		C865A15C18411DB800B64BB3 /* tv_flat_play.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15318411DB800B64BB3 /* tv_flat_play.png */; };
+		C865A15F1841225700B64BB3 /* €€_tuto.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15D1841225700B64BB3 /* €€_tuto.png */; };
+		C865A1601841225700B64BB3 /* dryer_light_ac_tuto.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15E1841225700B64BB3 /* dryer_light_ac_tuto.png */; };
+		C865A1621841229B00B64BB3 /* €_tuto.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A1611841229B00B64BB3 /* €_tuto.png */; };
 		C8F824021840DC080093A9AC /* MFPDevicesService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F824011840DC080093A9AC /* MFPDevicesService.m */; };
 		C8F824051840DC860093A9AC /* DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F824041840DC860093A9AC /* DeviceModel.m */; };
 /* End PBXBuildFile section */
@@ -111,6 +114,9 @@
 		C865A15118411DB800B64BB3 /* lightbulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightbulb.png; sourceTree = "<group>"; };
 		C865A15218411DB800B64BB3 /* plug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plug.png; sourceTree = "<group>"; };
 		C865A15318411DB800B64BB3 /* tv_flat_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tv_flat_play.png; sourceTree = "<group>"; };
+		C865A15D1841225700B64BB3 /* €€_tuto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "€€_tuto.png"; sourceTree = "<group>"; };
+		C865A15E1841225700B64BB3 /* dryer_light_ac_tuto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dryer_light_ac_tuto.png; sourceTree = "<group>"; };
+		C865A1611841229B00B64BB3 /* €_tuto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "€_tuto.png"; sourceTree = "<group>"; };
 		C8F824001840DC080093A9AC /* MFPDevicesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPDevicesService.h; sourceTree = "<group>"; };
 		C8F824011840DC080093A9AC /* MFPDevicesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPDevicesService.m; sourceTree = "<group>"; };
 		C8F824031840DC860093A9AC /* DeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceModel.h; sourceTree = "<group>"; };
@@ -287,6 +293,9 @@
 				C865A15118411DB800B64BB3 /* lightbulb.png */,
 				C865A15218411DB800B64BB3 /* plug.png */,
 				C865A15318411DB800B64BB3 /* tv_flat_play.png */,
+				C865A1611841229B00B64BB3 /* €_tuto.png */,
+				C865A15D1841225700B64BB3 /* €€_tuto.png */,
+				C865A15E1841225700B64BB3 /* dryer_light_ac_tuto.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -383,13 +392,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C865A1621841229B00B64BB3 /* €_tuto.png in Resources */,
 				C84F201B18401CDC001D89D1 /* Images.xcassets in Resources */,
 				C865A15A18411DB800B64BB3 /* lightbulb.png in Resources */,
 				C84F204C1840C016001D89D1 /* MFPConsoViewController.xib in Resources */,
+				C865A1601841225700B64BB3 /* dryer_light_ac_tuto.png in Resources */,
 				C84F20601840C1DB001D89D1 /* MFPTutoViewController.xib in Resources */,
 				C865A15918411DB800B64BB3 /* freezer_B.png in Resources */,
 				C865A15518411DB800B64BB3 /* air_conditioning_internal.png in Resources */,
 				C84F201318401CDC001D89D1 /* Main.storyboard in Resources */,
+				C865A15F1841225700B64BB3 /* €€_tuto.png in Resources */,
 				C865A15C18411DB800B64BB3 /* tv_flat_play.png in Resources */,
 				C865A15618411DB800B64BB3 /* boiler_flame.png in Resources */,
 				C865A15718411DB800B64BB3 /* dryer.png in Resources */,
