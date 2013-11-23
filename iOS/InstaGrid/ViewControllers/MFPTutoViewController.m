@@ -33,22 +33,19 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    self.tutoScrollView.contentSize = CGSizeMake(self.tutoScrollView.bounds.size.width * 2, self.tutoScrollView.bounds.size.height);
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    self.tutoScrollView.contentSize = CGSizeMake(self.tutoScrollView.bounds.size.width * 2, self.tutoScrollView.bounds.size.height);
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    self.tutoScrollView.contentSize = CGSizeMake(self.tutoScrollView.bounds.size.width * 2, self.tutoScrollView.bounds.size.height);
+    // TODO: find a better place to update the contentSize
+    self.tutoScrollView.contentSize = CGSizeMake(self.tutoScrollView.bounds.size.width * 3, self.tutoScrollView.bounds.size.height);
 }
 
 #pragma mark - UIScrollViewDelegate methods

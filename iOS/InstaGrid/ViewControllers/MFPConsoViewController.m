@@ -31,4 +31,9 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (IBAction)goDevices:(id)sender
+{
+    [self performSegueWithIdentifier:@"ToDevices" sender:self];
+}
+
 @end

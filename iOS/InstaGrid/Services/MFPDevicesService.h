@@ -11,6 +11,6 @@
 
 @interface MFPDevicesService : NSObject
 
-- (void)devices;
+- (void)devices:(void (^)(NSArray *devices, NSError *error))completion;
 
 @end
