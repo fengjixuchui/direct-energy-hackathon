@@ -33,7 +33,7 @@
 
 - (IBAction)goTuto:(id)sender
 {
-    
+    [self performSegueWithIdentifier:@"ToTuto" sender:self];
 }
 
 @end

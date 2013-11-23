@@ -9,8 +9,8 @@ pod 'SMWheelControl'
 #pod 'SDWebImage'
 #pod 'AsyncImageView'
 
+# depends on old 'AFNetworking', '1.x'
+#pod 'RestKit', '0.22.0'
+
 # useful (but its a paid app and needs to be removed for store)
 #pod 'Reveal-iOS-SDK'
-
-# depends on old 'AFNetworking', '1.3.3'
-#pod 'RestKit', '0.21.0'

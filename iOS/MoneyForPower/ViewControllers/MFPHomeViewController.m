@@ -8,6 +8,11 @@
 
 #import "MFPHomeViewController.h"
 
+NSString *const segueToTuto = @"ToTuto";
+NSString *const segueToAuth = @"ToAuth";
+NSString *const segueToDevices = @"ToDevices";
+NSString *const segueToConso = @"ToConso";
+
 
 @interface MFPHomeViewController ()
 
@@ -38,10 +43,10 @@
     /*
      // instanciating ViewController from StoryBoard
      UIStoryboard *storyboard = self.storyboard ?: [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-     UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"VIEWCONTROLLERIDENTIFIER"];
+     UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"Tuto"];
     
     // switching segue called
-    if ([segue.identifier isEqualToString:@"HomeToTuto"])
+    if ([segue.identifier isEqualToString:@"ToTuto"])
         ;
     
     // accessing segue destination view controller
@@ -50,27 +55,27 @@
     if (nil != targetVC) {
         //Do preparations here
     }
-     */
+    */
 }
 
 - (IBAction)goTuto:(id)sender
 {
-    [self performSegueWithIdentifier:@"HomeToTuto" sender:self];
+    [self performSegueWithIdentifier:@"ToTuto" sender:self];
 }
 
 - (IBAction)goAuth:(id)sender
 {
-    [self performSegueWithIdentifier:@"HomeToAuth" sender:self];
+    [self performSegueWithIdentifier:@"ToAuth" sender:self];
 }
 
 - (IBAction)goDevices:(id)sender
 {
-    [self performSegueWithIdentifier:@"HomeToDevices" sender:self];
+    [self performSegueWithIdentifier:@"ToDevices" sender:self];
 }
 
 - (IBAction)goConso:(id)sender
 {
-    [self performSegueWithIdentifier:@"HomeToConso" sender:self];
+    [self performSegueWithIdentifier:@"ToConso" sender:self];
 }
 
 @end

@@ -19,7 +19,7 @@
                 <viewController id="ZyX-1r-fmN" customClass="MFPDevicesViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Equipement" id="0RW-BT-eFa"/>
                     <connections>
-                        <segue destination="n17-Jh-gIG" kind="modal" id="iaX-QG-G5b"/>
+                        <segue destination="n17-Jh-gIG" kind="modal" identifier="ToTuto" id="iaX-QG-G5b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcc-Oo-9uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -32,7 +32,7 @@
                 <viewController id="4Q8-Gu-vqR" customClass="MFPConsoViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Consommation" id="3Dd-9k-eyz"/>
                     <connections>
-                        <segue destination="ZyX-1r-fmN" kind="push" id="J2p-zf-wbR"/>
+                        <segue destination="ZyX-1r-fmN" kind="push" identifier="ToDevices" id="J2p-zf-wbR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SK5-Xv-lsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,10 +60,10 @@
                 <viewController id="vXZ-lx-hvc" customClass="MFPHomeViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Accueil Direct Energie" id="nIn-sy-zI5"/>
                     <connections>
-                        <segue destination="FiA-lv-5ka" kind="push" identifier="HomeToAuth" id="LUn-fT-39y"/>
-                        <segue destination="ZyX-1r-fmN" kind="push" identifier="HomeToDevices" id="4yf-bJ-hMe"/>
-                        <segue destination="4Q8-Gu-vqR" kind="push" identifier="HomeToConso" id="HRM-Wt-YHa"/>
-                        <segue destination="n17-Jh-gIG" kind="modal" identifier="HomeToTuto" id="1cL-hp-bXh"/>
+                        <segue destination="FiA-lv-5ka" kind="push" identifier="ToAuth" id="LUn-fT-39y"/>
+                        <segue destination="ZyX-1r-fmN" kind="push" identifier="ToDevices" id="4yf-bJ-hMe"/>
+                        <segue destination="4Q8-Gu-vqR" kind="push" identifier="ToConso" id="HRM-Wt-YHa"/>
+                        <segue destination="n17-Jh-gIG" kind="modal" identifier="ToTuto" id="1cL-hp-bXh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -87,7 +87,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4yf-bJ-hMe"/>
-        <segue reference="1cL-hp-bXh"/>
+        <segue reference="J2p-zf-wbR"/>
+        <segue reference="iaX-QG-G5b"/>
     </inferredMetricsTieBreakers>
 </document>
