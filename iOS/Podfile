@@ -1,0 +1,16 @@
+platform :ios, '6.1'
+
+# needed
+pod 'AFNetworking'
+pod 'SMWheelControl'
+
+# might be useful (but currently unused)
+#pod 'Reachability'
+#pod 'SDWebImage'
+#pod 'AsyncImageView'
+
+# useful (but its a paid app and needs to be removed for store)
+#pod 'Reveal-iOS-SDK'
+
+# depends on old 'AFNetworking', '1.3.3'
+#pod 'RestKit', '0.21.0'
