@@ -1,14 +1,16 @@
 //
-//  ViewController.h
+//  NSObject+CoeurHelper.h
 //  MoneyForPower
 //
 //  Created by Antoine Cœur on 23/11/2013.
 //  Copyright (c) 2013 Cœur. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 
-@interface ViewController : UIViewController
+@interface NSObject (CoeurHelper)
+
+- (id)as:(Class)class;
 
 @end

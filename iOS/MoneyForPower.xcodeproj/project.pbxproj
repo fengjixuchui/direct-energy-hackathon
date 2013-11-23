@@ -23,6 +23,7 @@
 		C84F202418401CDC001D89D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F200318401CDC001D89D1 /* UIKit.framework */; };
 		C84F202C18401CDC001D89D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C84F202A18401CDC001D89D1 /* InfoPlist.strings */; };
 		C84F202E18401CDC001D89D1 /* MoneyForPowerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F202D18401CDC001D89D1 /* MoneyForPowerTests.m */; };
+		C84F20421840311D001D89D1 /* NSObject+CoeurHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F20411840311D001D89D1 /* NSObject+CoeurHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		C84F20391840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main_iPad.strings; sourceTree = "<group>"; };
 		C84F203A1840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C84F203B1840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C84F20401840311D001D89D1 /* NSObject+CoeurHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CoeurHelper.h"; sourceTree = "<group>"; };
+		C84F20411840311D001D89D1 /* NSObject+CoeurHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CoeurHelper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +127,11 @@
 		C84F200518401CDC001D89D1 /* MoneyForPower */ = {
 			isa = PBXGroup;
 			children = (
-				C84F203718401ECE001D89D1 /* view controllers */,
+				C84F203F18402A11001D89D1 /* Resources */,
+				C84F203E18402A0B001D89D1 /* Helpers */,
+				C84F203D1840298A001D89D1 /* Services */,
+				C84F203C18402982001D89D1 /* Models */,
+				C84F203718401ECE001D89D1 /* View controllers */,
 				C84F200E18401CDC001D89D1 /* AppDelegate.h */,
 				C84F200F18401CDC001D89D1 /* AppDelegate.m */,
 				C84F201118401CDC001D89D1 /* Main_iPhone.storyboard */,
@@ -164,13 +171,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C84F203718401ECE001D89D1 /* view controllers */ = {
+		C84F203718401ECE001D89D1 /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
 				C84F201718401CDC001D89D1 /* ViewController.h */,
 				C84F201818401CDC001D89D1 /* ViewController.m */,
 			);
-			name = "view controllers";
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
+		C84F203C18402982001D89D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C84F203D1840298A001D89D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C84F203E18402A0B001D89D1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C84F20401840311D001D89D1 /* NSObject+CoeurHelper.h */,
+				C84F20411840311D001D89D1 /* NSObject+CoeurHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C84F203F18402A11001D89D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +346,7 @@
 			files = (
 				C84F201918401CDC001D89D1 /* ViewController.m in Sources */,
 				C84F201018401CDC001D89D1 /* AppDelegate.m in Sources */,
+				C84F20421840311D001D89D1 /* NSObject+CoeurHelper.m in Sources */,
 				C84F200C18401CDC001D89D1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

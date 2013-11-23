@@ -17,11 +17,14 @@ PODS:
   - AFNetworking/Serialization (2.0.3)
   - AFNetworking/UIKit (2.0.3):
     - AFNetworking/NSURLConnection
+  - SMWheelControl (0.1.1)
 
 DEPENDENCIES:
   - AFNetworking
+  - SMWheelControl
 
 SPEC CHECKSUMS:
   AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
+  SMWheelControl: bc343a2a2506858ad681bab2961474413ec60c0e
 
 COCOAPODS: 0.28.0

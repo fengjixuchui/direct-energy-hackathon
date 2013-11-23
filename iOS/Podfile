@@ -2,6 +2,7 @@ platform :ios, '6.1'
 
 # needed
 pod 'AFNetworking'
+pod 'SMWheelControl'
 
 # might be useful (but currently unused)
 #pod 'Reachability'
