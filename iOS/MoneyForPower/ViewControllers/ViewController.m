@@ -22,4 +22,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)dismiss:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

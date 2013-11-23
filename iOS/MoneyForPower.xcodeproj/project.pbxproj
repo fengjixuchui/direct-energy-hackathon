@@ -23,6 +23,16 @@
 		C84F202C18401CDC001D89D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C84F202A18401CDC001D89D1 /* InfoPlist.strings */; };
 		C84F202E18401CDC001D89D1 /* MoneyForPowerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F202D18401CDC001D89D1 /* MoneyForPowerTests.m */; };
 		C84F20421840311D001D89D1 /* NSObject+CoeurHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F20411840311D001D89D1 /* NSObject+CoeurHelper.m */; };
+		C84F20461840BEC0001D89D1 /* MFPAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F20441840BEC0001D89D1 /* MFPAuthViewController.m */; };
+		C84F20471840BEC0001D89D1 /* MFPAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84F20451840BEC0001D89D1 /* MFPAuthViewController.xib */; };
+		C84F204B1840C016001D89D1 /* MFPConsoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F20491840C016001D89D1 /* MFPConsoViewController.m */; };
+		C84F204C1840C016001D89D1 /* MFPConsoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84F204A1840C016001D89D1 /* MFPConsoViewController.xib */; };
+		C84F20501840C03B001D89D1 /* MFPDevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F204E1840C03B001D89D1 /* MFPDevicesViewController.m */; };
+		C84F20511840C03B001D89D1 /* MFPDevicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84F204F1840C03B001D89D1 /* MFPDevicesViewController.xib */; };
+		C84F205A1840C0ED001D89D1 /* MFPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F20581840C0ED001D89D1 /* MFPHomeViewController.m */; };
+		C84F205B1840C0ED001D89D1 /* MFPHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84F20591840C0ED001D89D1 /* MFPHomeViewController.xib */; };
+		C84F205F1840C1DB001D89D1 /* MFPTutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F205D1840C1DB001D89D1 /* MFPTutoViewController.m */; };
+		C84F20601840C1DB001D89D1 /* MFPTutoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84F205E1840C1DB001D89D1 /* MFPTutoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +53,6 @@
 		C84F200118401CDC001D89D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C84F200318401CDC001D89D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C84F200718401CDC001D89D1 /* MoneyForPower-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoneyForPower-Info.plist"; sourceTree = "<group>"; };
-		C84F200918401CDC001D89D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C84F200B18401CDC001D89D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C84F200D18401CDC001D89D1 /* MoneyForPower-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoneyForPower-Prefix.pch"; sourceTree = "<group>"; };
 		C84F200E18401CDC001D89D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,13 +64,27 @@
 		C84F202018401CDC001D89D1 /* MoneyForPowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyForPowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84F202118401CDC001D89D1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C84F202918401CDC001D89D1 /* MoneyForPowerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoneyForPowerTests-Info.plist"; sourceTree = "<group>"; };
-		C84F202B18401CDC001D89D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C84F202D18401CDC001D89D1 /* MoneyForPowerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyForPowerTests.m; sourceTree = "<group>"; };
 		C84F20381840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		C84F203A1840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C84F203B1840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C84F20401840311D001D89D1 /* NSObject+CoeurHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CoeurHelper.h"; sourceTree = "<group>"; };
 		C84F20411840311D001D89D1 /* NSObject+CoeurHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CoeurHelper.m"; sourceTree = "<group>"; };
+		C84F20431840BEC0001D89D1 /* MFPAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPAuthViewController.h; sourceTree = "<group>"; };
+		C84F20441840BEC0001D89D1 /* MFPAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPAuthViewController.m; sourceTree = "<group>"; };
+		C84F20451840BEC0001D89D1 /* MFPAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPAuthViewController.xib; sourceTree = "<group>"; };
+		C84F20481840C016001D89D1 /* MFPConsoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPConsoViewController.h; sourceTree = "<group>"; };
+		C84F20491840C016001D89D1 /* MFPConsoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPConsoViewController.m; sourceTree = "<group>"; };
+		C84F204A1840C016001D89D1 /* MFPConsoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPConsoViewController.xib; sourceTree = "<group>"; };
+		C84F204D1840C03B001D89D1 /* MFPDevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPDevicesViewController.h; sourceTree = "<group>"; };
+		C84F204E1840C03B001D89D1 /* MFPDevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPDevicesViewController.m; sourceTree = "<group>"; };
+		C84F204F1840C03B001D89D1 /* MFPDevicesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPDevicesViewController.xib; sourceTree = "<group>"; };
+		C84F20571840C0ED001D89D1 /* MFPHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPHomeViewController.h; sourceTree = "<group>"; };
+		C84F20581840C0ED001D89D1 /* MFPHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPHomeViewController.m; sourceTree = "<group>"; };
+		C84F20591840C0ED001D89D1 /* MFPHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPHomeViewController.xib; sourceTree = "<group>"; };
+		C84F205C1840C1DB001D89D1 /* MFPTutoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPTutoViewController.h; sourceTree = "<group>"; };
+		C84F205D1840C1DB001D89D1 /* MFPTutoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPTutoViewController.m; sourceTree = "<group>"; };
+		C84F205E1840C1DB001D89D1 /* MFPTutoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPTutoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +195,24 @@
 			children = (
 				C84F201718401CDC001D89D1 /* ViewController.h */,
 				C84F201818401CDC001D89D1 /* ViewController.m */,
+				C84F20571840C0ED001D89D1 /* MFPHomeViewController.h */,
+				C84F20581840C0ED001D89D1 /* MFPHomeViewController.m */,
+				C84F20591840C0ED001D89D1 /* MFPHomeViewController.xib */,
+				C84F205C1840C1DB001D89D1 /* MFPTutoViewController.h */,
+				C84F205D1840C1DB001D89D1 /* MFPTutoViewController.m */,
+				C84F205E1840C1DB001D89D1 /* MFPTutoViewController.xib */,
+				C84F20431840BEC0001D89D1 /* MFPAuthViewController.h */,
+				C84F20441840BEC0001D89D1 /* MFPAuthViewController.m */,
+				C84F20451840BEC0001D89D1 /* MFPAuthViewController.xib */,
+				C84F204D1840C03B001D89D1 /* MFPDevicesViewController.h */,
+				C84F204E1840C03B001D89D1 /* MFPDevicesViewController.m */,
+				C84F204F1840C03B001D89D1 /* MFPDevicesViewController.xib */,
+				C84F20481840C016001D89D1 /* MFPConsoViewController.h */,
+				C84F20491840C016001D89D1 /* MFPConsoViewController.m */,
+				C84F204A1840C016001D89D1 /* MFPConsoViewController.xib */,
 			);
 			name = "View controllers";
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C84F203C18402982001D89D1 /* Models */ = {
@@ -287,7 +326,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C84F201B18401CDC001D89D1 /* Images.xcassets in Resources */,
+				C84F204C1840C016001D89D1 /* MFPConsoViewController.xib in Resources */,
+				C84F20601840C1DB001D89D1 /* MFPTutoViewController.xib in Resources */,
 				C84F201318401CDC001D89D1 /* Main.storyboard in Resources */,
+				C84F20471840BEC0001D89D1 /* MFPAuthViewController.xib in Resources */,
+				C84F20511840C03B001D89D1 /* MFPDevicesViewController.xib in Resources */,
+				C84F205B1840C0ED001D89D1 /* MFPHomeViewController.xib in Resources */,
 				C84F200A18401CDC001D89D1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,9 +385,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C84F201918401CDC001D89D1 /* ViewController.m in Sources */,
+				C84F20501840C03B001D89D1 /* MFPDevicesViewController.m in Sources */,
+				C84F204B1840C016001D89D1 /* MFPConsoViewController.m in Sources */,
+				C84F205A1840C0ED001D89D1 /* MFPHomeViewController.m in Sources */,
 				C84F201018401CDC001D89D1 /* AppDelegate.m in Sources */,
 				C84F20421840311D001D89D1 /* NSObject+CoeurHelper.m in Sources */,
 				C84F200C18401CDC001D89D1 /* main.m in Sources */,
+				C84F205F1840C1DB001D89D1 /* MFPTutoViewController.m in Sources */,
+				C84F20461840BEC0001D89D1 /* MFPAuthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +418,6 @@
 		C84F200818401CDC001D89D1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C84F200918401CDC001D89D1 /* en */,
 				C84F203A1840271B001D89D1 /* fr */,
 			);
 			name = InfoPlist.strings;
@@ -387,7 +435,6 @@
 		C84F202A18401CDC001D89D1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C84F202B18401CDC001D89D1 /* en */,
 				C84F203B1840271B001D89D1 /* fr */,
 			);
 			name = InfoPlist.strings;
