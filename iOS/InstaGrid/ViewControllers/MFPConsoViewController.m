@@ -8,9 +8,15 @@
 
 #import "MFPConsoViewController.h"
 #import "MainManager.h"
+#import "MFPConsoCell.h"
 
 
 @interface MFPConsoViewController ()
+<UICollectionViewDataSource,
+UICollectionViewDelegate>
+
+@property (strong, nonatomic) NSArray *consoArray; // of ConsoModel
+@property (weak, nonatomic) IBOutlet UICollectionView *consoCollectionView;
 
 @end
 
@@ -32,6 +38,8 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+#pragma mark lifecycle
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -49,6 +57,33 @@
 {
     [super viewDidAppear:animated];
 }
+
+#pragma mark setters & getters
+
+- (void)setDevicesArray:(NSArray *)devicesArray
+{
+    _consoArray = devicesArray;
+    
+    [self.consoCollectionView reloadData];
+}
+
+#pragma mark UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return [_consoArray count];
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    MFPConsoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"consoCell" forIndexPath:indexPath];
+    
+    [cell bindObject:_consoArray[indexPath.row]];
+    
+    return cell;
+}
+
+#pragma mark actions
 
 - (IBAction)goDevices:(id)sender
 {

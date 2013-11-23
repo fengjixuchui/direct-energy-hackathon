@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MFPConsoViewController">
             <connections>
+                <outlet property="consoCollectionView" destination="JoU-2U-4Cj" id="cU3-Fk-lUO"/>
                 <outlet property="view" destination="pCj-i0-Opb" id="Cb5-23-Xpf"/>
             </connections>
         </placeholder>

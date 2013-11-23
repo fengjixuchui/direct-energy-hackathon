@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ConsoModel.h"
 
 
 @interface MFPConsoCell : UICollectionViewCell
+
+- (void)bindObject:(ConsoModel *)object;
 
 @end

@@ -8,11 +8,7 @@
 
 #import "MFPHomeViewController.h"
 #import "MainManager.h"
-
-NSString *const segueToTuto = @"ToTuto";
-NSString *const segueToAuth = @"ToAuth";
-NSString *const segueToDevices = @"ToDevices";
-NSString *const segueToConso = @"ToConso";
+#import "MFPConsoCell.h"
 
 
 @interface MFPHomeViewController ()
@@ -44,6 +40,15 @@ UICollectionViewDelegate>
     [self.consoCollectionView registerNib:[UINib nibWithNibName:@"MFPConsoCell" bundle:nil] forCellWithReuseIdentifier:@"consoCell"];
 }
 
+#pragma mark setters & getters
+
+- (void)setDevicesArray:(NSArray *)devicesArray
+{
+    _consoArray = devicesArray;
+    
+    [self.consoCollectionView reloadData];
+}
+
 #pragma mark UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -53,7 +58,9 @@ UICollectionViewDelegate>
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"consoCell" forIndexPath:indexPath];
+    MFPConsoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"consoCell" forIndexPath:indexPath];
+    
+    [cell bindObject:_consoArray[indexPath.row]];
     
     return cell;
 }

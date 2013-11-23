@@ -25,6 +25,7 @@
 /*
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
+    // TODO: intersect with self.contentSize
     return [self.superview pointInside:[self convertPoint:point toView:self.superview] withEvent:event];
 }
 */
@@ -39,6 +40,7 @@
                                   self.bounds.size.height);
     */
     
+    // TODO: find a way to automatically determine the size factor
     self.contentSize = CGSizeMake(self.bounds.size.width * 4, self.bounds.size.height);
 }
 
