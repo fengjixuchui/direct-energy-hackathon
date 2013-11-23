@@ -9,9 +9,10 @@
 #import "MFPDevicesService.h"
 #import "NSObject+CoeurHelper.h"
 #import <AFNetworking.h>
+#import "DeviceModel.h"
 
-NSString *const aliveURL = @"http://62.210.131.112:8081/instagrid/api/v1/alive";
-NSString *const devicesURL = @"http://62.210.131.112:8081/instagrid/api/v1/devices";
+NSString *const consoURL = @"http://62.210.131.112:80/instagrid/api/v1/conso";
+NSString *const devicesURL = @"http://62.210.131.112:80/instagrid/api/v1/devices";
 
 
 @implementation MFPDevicesService
@@ -21,16 +22,15 @@ NSString *const devicesURL = @"http://62.210.131.112:8081/instagrid/api/v1/devic
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSString *url = devicesURL;
     [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSDictionary *responseObjectDict = [responseObject as:[NSDictionary self]];
-        if (responseObjectDict)
+        NSArray *responseObjectArray = [responseObject as:[NSArray self]];
+        if (responseObjectArray)
         {
-            //TODO:
-            //NSArray *devices = [DeviceModel objectWithDictionary:responseObjectDict];
-            //completion(devices, nil);
+            NSArray *devices = [DeviceModel objectArrayWithArray:responseObjectArray];
+            completion(devices, nil);
         }
         else
         {
-            NSError *error = [NSError errorWithDomain:@"not a dic" code:1 userInfo:nil];
+            NSError *error = [NSError errorWithDomain:@"not an array" code:1 userInfo:nil];
             completion(nil, error);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

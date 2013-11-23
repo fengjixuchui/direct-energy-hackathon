@@ -40,6 +40,7 @@ UICollectionViewDelegate>
     
     [self.devicesCollectionView registerNib:[UINib nibWithNibName:@"MFPDeviceCell" bundle:nil] forCellWithReuseIdentifier:@"deviceCell"];
     
+    self.devicesService = [MFPDevicesService new];
     [self.devicesService devices:^(NSArray *devices, NSError *error) {
         self.devicesArray = devices;
     }];

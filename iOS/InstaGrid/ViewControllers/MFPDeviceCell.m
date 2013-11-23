@@ -11,7 +11,7 @@
 
 @interface MFPDeviceCell ()
 
-@property (strong, nonatomic) IBOutlet UIImage *deviceImage;
+@property (strong, nonatomic) IBOutlet UIImageView *deviceImageView;
 @property (strong, nonatomic) IBOutlet UILabel *deviceLabel;
 
 @end
