@@ -9,6 +9,7 @@
 #import "MFPHomeViewController.h"
 #import "MainManager.h"
 #import "MFPConsoCell.h"
+#import <SMWheelControl.h>
 
 
 @interface MFPHomeViewController ()
@@ -17,6 +18,7 @@ UICollectionViewDelegate>
 
 @property (strong, nonatomic) NSArray *consoArray; // of ConsoModel
 @property (weak, nonatomic) IBOutlet UICollectionView *consoCollectionView;
+@property (strong, nonatomic) IBOutlet SMWheelControl *wheel;
 
 @end
 
@@ -38,6 +40,10 @@ UICollectionViewDelegate>
     // Do any additional setup after loading the view from its nib.
     
     [self.consoCollectionView registerNib:[UINib nibWithNibName:@"MFPConsoCell" bundle:nil] forCellWithReuseIdentifier:@"consoCell"];
+    
+    //SMWheelControl *wheel = [[SMWheelControl alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
+    //self.wheel = wheel;
+    //[wheel addTarget:self action:@selector(wheelDidChangeValue:) forControlEvents:UIControlEventValueChanged];
 }
 
 #pragma mark setters & getters
