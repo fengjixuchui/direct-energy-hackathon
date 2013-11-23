@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ObjectModel.h"
 
 
-@interface ConsoModel : NSObject
+@interface ConsoModel : ObjectModel
 
 @property (strong, nonatomic) NSString *conso;
 @property (strong, nonatomic) NSDate *date;

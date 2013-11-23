@@ -47,6 +47,9 @@
 		C865A15F1841225700B64BB3 /* €€_tuto.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15D1841225700B64BB3 /* €€_tuto.png */; };
 		C865A1601841225700B64BB3 /* dryer_light_ac_tuto.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A15E1841225700B64BB3 /* dryer_light_ac_tuto.png */; };
 		C865A1621841229B00B64BB3 /* €_tuto.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A1611841229B00B64BB3 /* €_tuto.png */; };
+		C8A58BEB18413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A58BE618413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.m */; };
+		C8A58BEC18413F2B003212A6 /* ObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A58BE818413F2B003212A6 /* ObjectModel.m */; };
+		C8A58BED18413F2B003212A6 /* PropertiesRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A58BEA18413F2B003212A6 /* PropertiesRuntimeHelper.m */; };
 		C8CDCA0118412EC900C2903E /* MFPConsoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDCA0018412EC900C2903E /* MFPConsoCell.m */; };
 		C8CDCA0318412EE500C2903E /* MFPConsoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8CDCA0218412EE500C2903E /* MFPConsoCell.xib */; };
 		C8CDCA0618412F4500C2903E /* ConsoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDCA0518412F4500C2903E /* ConsoModel.m */; };
@@ -122,6 +125,12 @@
 		C865A15D1841225700B64BB3 /* €€_tuto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "€€_tuto.png"; sourceTree = "<group>"; };
 		C865A15E1841225700B64BB3 /* dryer_light_ac_tuto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dryer_light_ac_tuto.png; sourceTree = "<group>"; };
 		C865A1611841229B00B64BB3 /* €_tuto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "€_tuto.png"; sourceTree = "<group>"; };
+		C8A58BE518413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+setValuesForKeysWithJSONDictionary.h"; sourceTree = "<group>"; };
+		C8A58BE618413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+setValuesForKeysWithJSONDictionary.m"; sourceTree = "<group>"; };
+		C8A58BE718413F2B003212A6 /* ObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectModel.h; sourceTree = "<group>"; };
+		C8A58BE818413F2B003212A6 /* ObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectModel.m; sourceTree = "<group>"; };
+		C8A58BE918413F2B003212A6 /* PropertiesRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertiesRuntimeHelper.h; sourceTree = "<group>"; };
+		C8A58BEA18413F2B003212A6 /* PropertiesRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertiesRuntimeHelper.m; sourceTree = "<group>"; };
 		C8CDC9FF18412EC900C2903E /* MFPConsoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPConsoCell.h; sourceTree = "<group>"; };
 		C8CDCA0018412EC900C2903E /* MFPConsoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPConsoCell.m; sourceTree = "<group>"; };
 		C8CDCA0218412EE500C2903E /* MFPConsoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPConsoCell.xib; sourceTree = "<group>"; };
@@ -275,6 +284,7 @@
 		C84F203C18402982001D89D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C8A58BE418413F2B003212A6 /* Core */,
 				C8CDCA0418412F4500C2903E /* ConsoModel.h */,
 				C8CDCA0518412F4500C2903E /* ConsoModel.m */,
 				C8F824031840DC860093A9AC /* DeviceModel.h */,
@@ -318,6 +328,19 @@
 				C865A1491841175B00B64BB3 /* MainManager.m */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		C8A58BE418413F2B003212A6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C8A58BE518413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.h */,
+				C8A58BE618413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.m */,
+				C8A58BE718413F2B003212A6 /* ObjectModel.h */,
+				C8A58BE818413F2B003212A6 /* ObjectModel.m */,
+				C8A58BE918413F2B003212A6 /* PropertiesRuntimeHelper.h */,
+				C8A58BEA18413F2B003212A6 /* PropertiesRuntimeHelper.m */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		C8CDCA0718412FEF00C2903E /* equipment */ = {
@@ -503,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8F824051840DC860093A9AC /* DeviceModel.m in Sources */,
+				C8A58BEB18413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.m in Sources */,
 				C8CDCA0D1841339700C2903E /* ScrollView.m in Sources */,
 				C865A1411841026300B64BB3 /* MFPDeviceCell.m in Sources */,
 				C84F201918401CDC001D89D1 /* ViewController.m in Sources */,
@@ -513,10 +537,12 @@
 				C84F201018401CDC001D89D1 /* AppDelegate.m in Sources */,
 				C865A146184110F600B64BB3 /* NonAnimatedSegue.m in Sources */,
 				C84F20421840311D001D89D1 /* NSObject+CoeurHelper.m in Sources */,
+				C8A58BED18413F2B003212A6 /* PropertiesRuntimeHelper.m in Sources */,
 				C8CDCA0618412F4500C2903E /* ConsoModel.m in Sources */,
 				C84F200C18401CDC001D89D1 /* main.m in Sources */,
 				C84F205F1840C1DB001D89D1 /* MFPTutoViewController.m in Sources */,
 				C8CDCA0118412EC900C2903E /* MFPConsoCell.m in Sources */,
+				C8A58BEC18413F2B003212A6 /* ObjectModel.m in Sources */,
 				C865A14A1841175B00B64BB3 /* MainManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

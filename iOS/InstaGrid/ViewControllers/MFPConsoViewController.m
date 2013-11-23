@@ -45,6 +45,11 @@
     }
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
 - (IBAction)goDevices:(id)sender
 {
     [self performSegueWithIdentifier:@"ToDevices" sender:self];
