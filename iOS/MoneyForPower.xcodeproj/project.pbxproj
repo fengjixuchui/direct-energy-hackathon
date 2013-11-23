@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B23D8C6152846CF894E4EAC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB360A5D873847BF8E0CC5B6 /* libPods.a */; };
+		C84F200018401CDC001D89D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F1FFF18401CDC001D89D1 /* Foundation.framework */; };
+		C84F200218401CDC001D89D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F200118401CDC001D89D1 /* CoreGraphics.framework */; };
+		C84F200418401CDC001D89D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F200318401CDC001D89D1 /* UIKit.framework */; };
+		C84F200A18401CDC001D89D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C84F200818401CDC001D89D1 /* InfoPlist.strings */; };
+		C84F200C18401CDC001D89D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F200B18401CDC001D89D1 /* main.m */; };
+		C84F201018401CDC001D89D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F200F18401CDC001D89D1 /* AppDelegate.m */; };
+		C84F201318401CDC001D89D1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84F201118401CDC001D89D1 /* Main_iPhone.storyboard */; };
+		C84F201618401CDC001D89D1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84F201418401CDC001D89D1 /* Main_iPad.storyboard */; };
+		C84F201918401CDC001D89D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F201818401CDC001D89D1 /* ViewController.m */; };
+		C84F201B18401CDC001D89D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84F201A18401CDC001D89D1 /* Images.xcassets */; };
+		C84F202218401CDC001D89D1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F202118401CDC001D89D1 /* XCTest.framework */; };
+		C84F202318401CDC001D89D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F1FFF18401CDC001D89D1 /* Foundation.framework */; };
+		C84F202418401CDC001D89D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F200318401CDC001D89D1 /* UIKit.framework */; };
+		C84F202C18401CDC001D89D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C84F202A18401CDC001D89D1 /* InfoPlist.strings */; };
+		C84F202E18401CDC001D89D1 /* MoneyForPowerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F202D18401CDC001D89D1 /* MoneyForPowerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C84F202518401CDC001D89D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C84F1FF418401CDC001D89D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C84F1FFB18401CDC001D89D1;
+			remoteInfo = MoneyForPower;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65296AD14EA646EABB1B87B8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		BB360A5D873847BF8E0CC5B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84F1FFC18401CDC001D89D1 /* MoneyForPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyForPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84F1FFF18401CDC001D89D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C84F200118401CDC001D89D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C84F200318401CDC001D89D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C84F200718401CDC001D89D1 /* MoneyForPower-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoneyForPower-Info.plist"; sourceTree = "<group>"; };
+		C84F200918401CDC001D89D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C84F200B18401CDC001D89D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C84F200D18401CDC001D89D1 /* MoneyForPower-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoneyForPower-Prefix.pch"; sourceTree = "<group>"; };
+		C84F200E18401CDC001D89D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C84F200F18401CDC001D89D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C84F201218401CDC001D89D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C84F201518401CDC001D89D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		C84F201718401CDC001D89D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C84F201818401CDC001D89D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C84F201A18401CDC001D89D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C84F202018401CDC001D89D1 /* MoneyForPowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyForPowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84F202118401CDC001D89D1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C84F202918401CDC001D89D1 /* MoneyForPowerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoneyForPowerTests-Info.plist"; sourceTree = "<group>"; };
+		C84F202B18401CDC001D89D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C84F202D18401CDC001D89D1 /* MoneyForPowerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyForPowerTests.m; sourceTree = "<group>"; };
+		C84F20381840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
+		C84F20391840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main_iPad.strings; sourceTree = "<group>"; };
+		C84F203A1840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C84F203B1840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C84F1FF918401CDC001D89D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84F200218401CDC001D89D1 /* CoreGraphics.framework in Frameworks */,
+				C84F200418401CDC001D89D1 /* UIKit.framework in Frameworks */,
+				C84F200018401CDC001D89D1 /* Foundation.framework in Frameworks */,
+				3B23D8C6152846CF894E4EAC /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84F201D18401CDC001D89D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84F202218401CDC001D89D1 /* XCTest.framework in Frameworks */,
+				C84F202418401CDC001D89D1 /* UIKit.framework in Frameworks */,
+				C84F202318401CDC001D89D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C84F1FF318401CDC001D89D1 = {
+			isa = PBXGroup;
+			children = (
+				C84F200518401CDC001D89D1 /* MoneyForPower */,
+				C84F202718401CDC001D89D1 /* MoneyForPowerTests */,
+				C84F1FFE18401CDC001D89D1 /* Frameworks */,
+				C84F1FFD18401CDC001D89D1 /* Products */,
+				65296AD14EA646EABB1B87B8 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		C84F1FFD18401CDC001D89D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C84F1FFC18401CDC001D89D1 /* MoneyForPower.app */,
+				C84F202018401CDC001D89D1 /* MoneyForPowerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C84F1FFE18401CDC001D89D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C84F1FFF18401CDC001D89D1 /* Foundation.framework */,
+				C84F200118401CDC001D89D1 /* CoreGraphics.framework */,
+				C84F200318401CDC001D89D1 /* UIKit.framework */,
+				C84F202118401CDC001D89D1 /* XCTest.framework */,
+				BB360A5D873847BF8E0CC5B6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C84F200518401CDC001D89D1 /* MoneyForPower */ = {
+			isa = PBXGroup;
+			children = (
+				C84F203718401ECE001D89D1 /* view controllers */,
+				C84F200E18401CDC001D89D1 /* AppDelegate.h */,
+				C84F200F18401CDC001D89D1 /* AppDelegate.m */,
+				C84F201118401CDC001D89D1 /* Main_iPhone.storyboard */,
+				C84F201418401CDC001D89D1 /* Main_iPad.storyboard */,
+				C84F201A18401CDC001D89D1 /* Images.xcassets */,
+				C84F200618401CDC001D89D1 /* Supporting Files */,
+			);
+			path = MoneyForPower;
+			sourceTree = "<group>";
+		};
+		C84F200618401CDC001D89D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C84F200718401CDC001D89D1 /* MoneyForPower-Info.plist */,
+				C84F200818401CDC001D89D1 /* InfoPlist.strings */,
+				C84F200B18401CDC001D89D1 /* main.m */,
+				C84F200D18401CDC001D89D1 /* MoneyForPower-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C84F202718401CDC001D89D1 /* MoneyForPowerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C84F202D18401CDC001D89D1 /* MoneyForPowerTests.m */,
+				C84F202818401CDC001D89D1 /* Supporting Files */,
+			);
+			path = MoneyForPowerTests;
+			sourceTree = "<group>";
+		};
+		C84F202818401CDC001D89D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C84F202918401CDC001D89D1 /* MoneyForPowerTests-Info.plist */,
+				C84F202A18401CDC001D89D1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C84F203718401ECE001D89D1 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C84F201718401CDC001D89D1 /* ViewController.h */,
+				C84F201818401CDC001D89D1 /* ViewController.m */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C84F1FFB18401CDC001D89D1 /* MoneyForPower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84F203118401CDC001D89D1 /* Build configuration list for PBXNativeTarget "MoneyForPower" */;
+			buildPhases = (
+				23A6F58718BF4648AA8A7974 /* Check Pods Manifest.lock */,
+				C84F1FF818401CDC001D89D1 /* Sources */,
+				C84F1FF918401CDC001D89D1 /* Frameworks */,
+				C84F1FFA18401CDC001D89D1 /* Resources */,
+				7FFA195F41B94348AED2FCF9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyForPower;
+			productName = MoneyForPower;
+			productReference = C84F1FFC18401CDC001D89D1 /* MoneyForPower.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C84F201F18401CDC001D89D1 /* MoneyForPowerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84F203418401CDC001D89D1 /* Build configuration list for PBXNativeTarget "MoneyForPowerTests" */;
+			buildPhases = (
+				C84F201C18401CDC001D89D1 /* Sources */,
+				C84F201D18401CDC001D89D1 /* Frameworks */,
+				C84F201E18401CDC001D89D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C84F202618401CDC001D89D1 /* PBXTargetDependency */,
+			);
+			name = MoneyForPowerTests;
+			productName = MoneyForPowerTests;
+			productReference = C84F202018401CDC001D89D1 /* MoneyForPowerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C84F1FF418401CDC001D89D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Cœur";
+				TargetAttributes = {
+					C84F201F18401CDC001D89D1 = {
+						TestTargetID = C84F1FFB18401CDC001D89D1;
+					};
+				};
+			};
+			buildConfigurationList = C84F1FF718401CDC001D89D1 /* Build configuration list for PBXProject "MoneyForPower" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = C84F1FF318401CDC001D89D1;
+			productRefGroup = C84F1FFD18401CDC001D89D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C84F1FFB18401CDC001D89D1 /* MoneyForPower */,
+				C84F201F18401CDC001D89D1 /* MoneyForPowerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C84F1FFA18401CDC001D89D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84F201618401CDC001D89D1 /* Main_iPad.storyboard in Resources */,
+				C84F201B18401CDC001D89D1 /* Images.xcassets in Resources */,
+				C84F201318401CDC001D89D1 /* Main_iPhone.storyboard in Resources */,
+				C84F200A18401CDC001D89D1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84F201E18401CDC001D89D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84F202C18401CDC001D89D1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23A6F58718BF4648AA8A7974 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7FFA195F41B94348AED2FCF9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C84F1FF818401CDC001D89D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84F201918401CDC001D89D1 /* ViewController.m in Sources */,
+				C84F201018401CDC001D89D1 /* AppDelegate.m in Sources */,
+				C84F200C18401CDC001D89D1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C84F201C18401CDC001D89D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84F202E18401CDC001D89D1 /* MoneyForPowerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C84F202618401CDC001D89D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C84F1FFB18401CDC001D89D1 /* MoneyForPower */;
+			targetProxy = C84F202518401CDC001D89D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C84F200818401CDC001D89D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C84F200918401CDC001D89D1 /* en */,
+				C84F203A1840271B001D89D1 /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C84F201118401CDC001D89D1 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C84F201218401CDC001D89D1 /* Base */,
+				C84F20381840271B001D89D1 /* fr */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C84F201418401CDC001D89D1 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C84F201518401CDC001D89D1 /* Base */,
+				C84F20391840271B001D89D1 /* fr */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		C84F202A18401CDC001D89D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C84F202B18401CDC001D89D1 /* en */,
+				C84F203B1840271B001D89D1 /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C84F202F18401CDC001D89D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C84F203018401CDC001D89D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C84F203218401CDC001D89D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65296AD14EA646EABB1B87B8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoneyForPower/MoneyForPower-Prefix.pch";
+				INFOPLIST_FILE = "MoneyForPower/MoneyForPower-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C84F203318401CDC001D89D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65296AD14EA646EABB1B87B8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoneyForPower/MoneyForPower-Prefix.pch";
+				INFOPLIST_FILE = "MoneyForPower/MoneyForPower-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C84F203518401CDC001D89D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MoneyForPower.app/MoneyForPower";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoneyForPower/MoneyForPower-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MoneyForPowerTests/MoneyForPowerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C84F203618401CDC001D89D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MoneyForPower.app/MoneyForPower";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoneyForPower/MoneyForPower-Prefix.pch";
+				INFOPLIST_FILE = "MoneyForPowerTests/MoneyForPowerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C84F1FF718401CDC001D89D1 /* Build configuration list for PBXProject "MoneyForPower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84F202F18401CDC001D89D1 /* Debug */,
+				C84F203018401CDC001D89D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C84F203118401CDC001D89D1 /* Build configuration list for PBXNativeTarget "MoneyForPower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84F203218401CDC001D89D1 /* Debug */,
+				C84F203318401CDC001D89D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C84F203418401CDC001D89D1 /* Build configuration list for PBXNativeTarget "MoneyForPowerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84F203518401CDC001D89D1 /* Debug */,
+				C84F203618401CDC001D89D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C84F1FF418401CDC001D89D1 /* Project object */;
+}
