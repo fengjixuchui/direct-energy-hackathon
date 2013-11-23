@@ -13,7 +13,7 @@
 
 @implementation MFPDevicesService
 
-- (void)devices
+- (void)devices:(void (^)(NSArray *devices, NSError *error))completion
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSString *url = @"http://";
@@ -21,16 +21,17 @@
         NSDictionary *responseObjectDict = [responseObject as:[NSDictionary self]];
         if (responseObjectDict)
         {
-            //InfoModel *info = [InfoModel objectWithDictionary:responseObjectDict];
-            //completion(result, nil);
+            //TODO:
+            //NSArray *devices = [DeviceModel objectWithDictionary:responseObjectDict];
+            //completion(devices, nil);
         }
         else
         {
-            //NSError *error = [NSError errorWithDomain:@"not a dic" code:1 userInfo:nil];
-            //completion(nil, error);
+            NSError *error = [NSError errorWithDomain:@"not a dic" code:1 userInfo:nil];
+            completion(nil, error);
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        //completion(nil, error);
+        completion(nil, error);
     }];
 }
 

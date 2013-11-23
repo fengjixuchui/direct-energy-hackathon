@@ -7,9 +7,15 @@
 //
 
 #import "MFPDevicesViewController.h"
+#import "MFPDevicesService.h"
 
 
 @interface MFPDevicesViewController ()
+<UICollectionViewDataSource,
+UICollectionViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *devicesCollectionView;
+@property (strong, nonatomic) IBOutlet MFPDevicesService *devicesService;
 
 @end
 
@@ -29,7 +35,39 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self.devicesCollectionView registerNib:[UINib nibWithNibName:@"MFPDeviceCell" bundle:nil] forCellWithReuseIdentifier:@"deviceCell"];
+    
+    [self.devicesService devices:^(NSArray *devices, NSError *error) {
+        self.devicesArray = devices;
+    }];
 }
+
+#pragma mark setters & getters
+
+- (void)setDevicesArray:(NSArray *)devicesArray
+{
+    _devicesArray = devicesArray;
+    
+    [self.devicesCollectionView reloadData];
+}
+
+#pragma mark UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return [_devicesArray count];
+}
+
+// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"deviceCell" forIndexPath:indexPath];
+    
+    return cell;
+}
+
+#pragma mark actions
 
 - (IBAction)goTuto:(id)sender
 {

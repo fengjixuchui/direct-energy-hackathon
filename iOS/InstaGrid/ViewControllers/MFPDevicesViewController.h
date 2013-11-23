@@ -11,4 +11,6 @@
 
 @interface MFPDevicesViewController : ViewController
 
+@property (strong, nonatomic) NSArray *devicesArray; // of DeviceModel
+
 @end
