@@ -13,6 +13,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.directenergie</groupId>
+			<artifactId>broker-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 		</dependency>
