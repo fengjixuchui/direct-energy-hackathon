@@ -7,6 +7,7 @@
 //
 
 #import "MFPConsoViewController.h"
+#import "MainManager.h"
 
 
 @interface MFPConsoViewController ()
@@ -29,6 +30,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    MainManager *manager = [MainManager sharedInstance];
+    if (manager.instaGridAccepted == NO) {
+        [self performSegueWithIdentifier:@"ToDevicesNonAnimated" sender:self];
+    }
 }
 
 - (IBAction)goDevices:(id)sender

@@ -36,6 +36,8 @@
 		C865A13E1840F5D200B64BB3 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = C865A13D1840F5D200B64BB3 /* test.png */; };
 		C865A1411841026300B64BB3 /* MFPDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C865A1401841026300B64BB3 /* MFPDeviceCell.m */; };
 		C865A1431841028500B64BB3 /* MFPDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C865A1421841028500B64BB3 /* MFPDeviceCell.xib */; };
+		C865A146184110F600B64BB3 /* NonAnimatedSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C865A145184110F600B64BB3 /* NonAnimatedSegue.m */; };
+		C865A14A1841175B00B64BB3 /* MainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C865A1491841175B00B64BB3 /* MainManager.m */; };
 		C8F824021840DC080093A9AC /* MFPDevicesService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F824011840DC080093A9AC /* MFPDevicesService.m */; };
 		C8F824051840DC860093A9AC /* DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F824041840DC860093A9AC /* DeviceModel.m */; };
 /* End PBXBuildFile section */
@@ -94,6 +96,10 @@
 		C865A13F1841026300B64BB3 /* MFPDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPDeviceCell.h; sourceTree = "<group>"; };
 		C865A1401841026300B64BB3 /* MFPDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPDeviceCell.m; sourceTree = "<group>"; };
 		C865A1421841028500B64BB3 /* MFPDeviceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPDeviceCell.xib; sourceTree = "<group>"; };
+		C865A144184110F600B64BB3 /* NonAnimatedSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonAnimatedSegue.h; sourceTree = "<group>"; };
+		C865A145184110F600B64BB3 /* NonAnimatedSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonAnimatedSegue.m; sourceTree = "<group>"; };
+		C865A1481841175B00B64BB3 /* MainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainManager.h; sourceTree = "<group>"; };
+		C865A1491841175B00B64BB3 /* MainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainManager.m; sourceTree = "<group>"; };
 		C8F824001840DC080093A9AC /* MFPDevicesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPDevicesService.h; sourceTree = "<group>"; };
 		C8F824011840DC080093A9AC /* MFPDevicesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPDevicesService.m; sourceTree = "<group>"; };
 		C8F824031840DC860093A9AC /* DeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceModel.h; sourceTree = "<group>"; };
@@ -160,15 +166,16 @@
 		C84F200518401CDC001D89D1 /* InstaGrid */ = {
 			isa = PBXGroup;
 			children = (
-				C84F203F18402A11001D89D1 /* Resources */,
 				C84F203E18402A0B001D89D1 /* Helpers */,
-				C84F203D1840298A001D89D1 /* Services */,
+				C865A1471841172700B64BB3 /* Managers */,
 				C84F203C18402982001D89D1 /* Models */,
+				C84F203F18402A11001D89D1 /* Resources */,
+				C84F203D1840298A001D89D1 /* Services */,
 				C84F203718401ECE001D89D1 /* View controllers */,
 				C84F200E18401CDC001D89D1 /* AppDelegate.h */,
 				C84F200F18401CDC001D89D1 /* AppDelegate.m */,
-				C84F201118401CDC001D89D1 /* Main.storyboard */,
 				C84F201A18401CDC001D89D1 /* Images.xcassets */,
+				C84F201118401CDC001D89D1 /* Main.storyboard */,
 				C84F200618401CDC001D89D1 /* Supporting Files */,
 			);
 			path = InstaGrid;
@@ -208,6 +215,8 @@
 			children = (
 				C84F201718401CDC001D89D1 /* ViewController.h */,
 				C84F201818401CDC001D89D1 /* ViewController.m */,
+				C865A144184110F600B64BB3 /* NonAnimatedSegue.h */,
+				C865A145184110F600B64BB3 /* NonAnimatedSegue.m */,
 				C84F20571840C0ED001D89D1 /* MFPHomeViewController.h */,
 				C84F20581840C0ED001D89D1 /* MFPHomeViewController.m */,
 				C84F20591840C0ED001D89D1 /* MFPHomeViewController.xib */,
@@ -264,6 +273,15 @@
 				C865A13D1840F5D200B64BB3 /* test.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C865A1471841172700B64BB3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C865A1481841175B00B64BB3 /* MainManager.h */,
+				C865A1491841175B00B64BB3 /* MainManager.m */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,9 +436,11 @@
 				C8F824021840DC080093A9AC /* MFPDevicesService.m in Sources */,
 				C84F205A1840C0ED001D89D1 /* MFPHomeViewController.m in Sources */,
 				C84F201018401CDC001D89D1 /* AppDelegate.m in Sources */,
+				C865A146184110F600B64BB3 /* NonAnimatedSegue.m in Sources */,
 				C84F20421840311D001D89D1 /* NSObject+CoeurHelper.m in Sources */,
 				C84F200C18401CDC001D89D1 /* main.m in Sources */,
 				C84F205F1840C1DB001D89D1 /* MFPTutoViewController.m in Sources */,
+				C865A14A1841175B00B64BB3 /* MainManager.m in Sources */,
 				C84F20461840BEC0001D89D1 /* MFPAuthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

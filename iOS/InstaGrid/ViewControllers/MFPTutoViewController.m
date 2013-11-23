@@ -7,6 +7,7 @@
 //
 
 #import "MFPTutoViewController.h"
+#import "MainManager.h"
 
 
 @interface MFPTutoViewController ()
@@ -53,6 +54,22 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     int page = ceil(scrollView.contentOffset.x / scrollView.frame.size.width);
     self.tutoPageControl.currentPage = page;
+}
+
+#pragma mark actions
+
+- (IBAction)subscribe:(id)sender {
+    MainManager *manager = [MainManager sharedInstance];
+    manager.instaGridAccepted = YES;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)unsubscribe:(id)sender {
+    MainManager *manager = [MainManager sharedInstance];
+    manager.instaGridAccepted = NO;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

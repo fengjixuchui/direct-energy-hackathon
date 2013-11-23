@@ -41,26 +41,20 @@ NSString *const segueToConso = @"ToConso";
     [super prepareForSegue:segue sender:sender];
     
     /*
-     // instanciating ViewController from StoryBoard
-     UIStoryboard *storyboard = self.storyboard ?: [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-     UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"Tuto"];
+    // instanciating ViewController from StoryBoard
+    UIStoryboard *storyboard = self.storyboard ?: [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"Tuto"];
     
     // switching segue called
-    if ([segue.identifier isEqualToString:@"ToTuto"])
-        ;
+    if ([segue.identifier isEqualToString:@"ToTuto"]) {
+    }
     
     // accessing segue destination view controller
     UIViewController * targetVC = segue.destinationViewController;
-    
-    if (nil != targetVC) {
+    if (targetVC != nil) {
         //Do preparations here
     }
     */
-}
-
-- (IBAction)goTuto:(id)sender
-{
-    [self performSegueWithIdentifier:@"ToTuto" sender:self];
 }
 
 - (IBAction)goAuth:(id)sender
@@ -68,14 +62,22 @@ NSString *const segueToConso = @"ToConso";
     [self performSegueWithIdentifier:@"ToAuth" sender:self];
 }
 
+- (IBAction)goConso:(id)sender
+{
+    [self performSegueWithIdentifier:@"ToConso" sender:self];
+}
+
+/*
 - (IBAction)goDevices:(id)sender
 {
     [self performSegueWithIdentifier:@"ToDevices" sender:self];
 }
+*/
 
-- (IBAction)goConso:(id)sender
+- (IBAction)goTuto:(id)sender
 {
-    [self performSegueWithIdentifier:@"ToConso" sender:self];
+    //[self performSegueWithIdentifier:@"ToTuto" sender:self];
+    [self performSegueWithIdentifier:@"ToConsoNonAnimated" sender:self];
 }
 
 @end

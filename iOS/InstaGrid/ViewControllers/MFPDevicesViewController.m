@@ -8,6 +8,7 @@
 
 #import "MFPDevicesViewController.h"
 #import "MFPDevicesService.h"
+#import "MainManager.h"
 
 
 @interface MFPDevicesViewController ()
@@ -41,6 +42,16 @@ UICollectionViewDelegate>
     [self.devicesService devices:^(NSArray *devices, NSError *error) {
         self.devicesArray = devices;
     }];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    MainManager *manager = [MainManager sharedInstance];
+    if (manager.instaGridAccepted == NO) {
+        [self performSegueWithIdentifier:@"ToTutoNonAnimated" sender:self];
+    }
 }
 
 #pragma mark setters & getters
