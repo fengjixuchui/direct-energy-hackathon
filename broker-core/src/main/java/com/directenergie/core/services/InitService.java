@@ -10,10 +10,10 @@ import com.directenergie.core.model.DeviceDefinition;
 import com.directenergie.core.model.DeviceType;
 import com.directenergie.core.model.User;
 
-public class UnitService {
+public class InitService {
 
 @Inject
-UserService userService;
+private UserService userService;
 	
 	public void getMocksUsers(){
 		User user1  = userService.addUser("Jean", "Bono", null);

@@ -15,5 +15,6 @@ public class AliveController {
 	@ResponseStatus(HttpStatus.OK)
 	public void alive() {
 
+		
 	}
 }

@@ -6,3 +6,7 @@
 *.ear
 broker-core/target
 broker-api/target
+broker-api/.settings/
+.settings/
+.project
+*.classpath

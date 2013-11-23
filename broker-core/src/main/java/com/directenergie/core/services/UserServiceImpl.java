@@ -12,12 +12,14 @@ public class UserServiceImpl implements UserService {
 	@Inject
 	private UserRepository userRepository;
 
-	public void addUser(String firstName, String lastName, String token) {
+	public User addUser(String firstName, String lastName, String token) {
 		User user = new User();
 		user.setFirstName(firstName);
 		user.setLastName(lastName);
 		user.setToken(token);
 		userRepository.save(user);
+		
+		return user;
 	}
 
 }
