@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ObjectModel.h"
 
 
-@interface DeviceModel : NSObject
+@interface DeviceModel : ObjectModel
 
 @end

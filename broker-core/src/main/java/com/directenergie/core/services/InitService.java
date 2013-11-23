@@ -22,11 +22,20 @@ public class InitService {
 		User user1 = userService.addUser("12345678234234",
 				"3eb5f7d44c31dde66c4c8eb1b3bd643c6fa04755be05e96b63088d496abc1e57");
 		user1.setDevices(createDevices());
+		user1.setLatitude(getPositionRandom());
+		user1.setLongitude(getPositionRandom());
 
 		User user2 = userService.addUser("67786546324456",
 				"8fa4521f25a03c4de2a94dcf74b937cdc9add69e6e1f045d721926a62ef7eecf");
 		user2.setDevices(createDevices());
+		user2.setLatitude(getPositionRandom());
+		user2.setLongitude(getPositionRandom());
+
 		return Arrays.asList(user1, user2);
+	}
+
+	private double getPositionRandom() {
+		return Math.random() * 90;
 	}
 
 	public List<Device> createDevices() {
@@ -63,5 +72,4 @@ public class InitService {
 
 		return devices;
 	}
-
 }

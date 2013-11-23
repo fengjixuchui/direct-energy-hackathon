@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cbO-Nv-sX2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
+        <development version="5000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
@@ -45,7 +46,7 @@
         <scene sceneID="Iva-da-81Y">
             <objects>
                 <navigationController definesPresentationContext="YES" id="cbO-Nv-sX2" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aRb-E0-iu8">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="aRb-E0-iu8">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

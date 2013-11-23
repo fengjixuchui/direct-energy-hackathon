@@ -38,8 +38,16 @@
     
     MainManager *manager = [MainManager sharedInstance];
     if (manager.instaGridAccepted == NO) {
-        [self performSegueWithIdentifier:@"ToDevicesNonAnimated" sender:self];
+        if ([self isMovingToParentViewController])
+        {
+            [self performSegueWithIdentifier:@"ToDevicesNonAnimated" sender:self];
+        }
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
 }
 
 - (IBAction)goDevices:(id)sender

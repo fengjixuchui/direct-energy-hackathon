@@ -15,7 +15,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.directenergie.core.model.Device;
+import com.directenergie.core.model.User;
 import com.directenergie.core.repository.DeviceRepository;
+import com.directenergie.core.repository.UserRepository;
 
 @Controller
 @RequestMapping("v1/devices")
@@ -26,6 +28,9 @@ public class DeviceController {
 	@Inject
 	private DeviceRepository deviceRepository;
 
+	@Inject
+	private UserRepository userRepository;
+
 	@RequestMapping(method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
 	@ResponseStatus(HttpStatus.OK)
 	public @ResponseBody
@@ -33,4 +38,18 @@ public class DeviceController {
 		LOGGER.debug("Fetching Device catalog");
 		return deviceRepository.findAll();
 	}
+
+	@RequestMapping(method = RequestMethod.POST, produces = { MediaType.APPLICATION_JSON_VALUE })
+	@ResponseStatus(HttpStatus.OK)
+	public void addDevice(Device device, User user) {
+		User userResult = userRepository.findOne(user.getId());
+		userResult.getDevices().add(device);
+	}
+
+	@RequestMapping(method = RequestMethod.DELETE, produces = { MediaType.APPLICATION_JSON_VALUE })
+	@ResponseStatus(HttpStatus.OK)
+	public void deleteDevice(Device device) {
+		deviceRepository.delete(device.getId());
+	}
+
 }

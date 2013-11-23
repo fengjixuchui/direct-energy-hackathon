@@ -24,6 +24,10 @@ public class User extends AbstractEntity {
 
 	private String pdl;
 
+	private double latitude;
+	
+	private double longitude;
+	
 	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
 	private List<Device> devices = new ArrayList<Device>(0);
 

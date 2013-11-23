@@ -19,7 +19,7 @@ NSString *const devicesURL = @"http://62.210.131.112:8081/instagrid/api/v1/devic
 - (void)devices:(void (^)(NSArray *devices, NSError *error))completion
 {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    NSString *url = @"http://";
+    NSString *url = devicesURL;
     [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSDictionary *responseObjectDict = [responseObject as:[NSDictionary self]];
         if (responseObjectDict)

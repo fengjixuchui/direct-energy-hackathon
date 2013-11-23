@@ -47,10 +47,18 @@ UICollectionViewDelegate>
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
     
     MainManager *manager = [MainManager sharedInstance];
     if (manager.instaGridAccepted == NO) {
-        [self performSegueWithIdentifier:@"ToTutoNonAnimated" sender:self];
+        if ([self isMovingToParentViewController])
+        {
+            [self performSegueWithIdentifier:@"ToTutoNonAnimated" sender:self];
+        }
     }
 }
 
@@ -70,7 +78,6 @@ UICollectionViewDelegate>
     return [_devicesArray count];
 }
 
-// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"deviceCell" forIndexPath:indexPath];
