@@ -32,7 +32,6 @@ public class DeviceController {
 	private UserRepository userRepository;
 
 	@RequestMapping(method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
-	@ResponseStatus(HttpStatus.OK)
 	public @ResponseBody
 	List<Device> getAll() {
 		LOGGER.debug("Fetching Device catalog");
@@ -40,7 +39,6 @@ public class DeviceController {
 	}
 
 	@RequestMapping(method = RequestMethod.POST, produces = { MediaType.APPLICATION_JSON_VALUE })
-	@ResponseStatus(HttpStatus.OK)
 	public void addDevice(Device device, User user) {
 		User userResult = userRepository.findOne(user.getId());
 		userResult.getDevices().add(device);
