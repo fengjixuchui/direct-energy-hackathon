@@ -14,8 +14,7 @@
 		C84F200A18401CDC001D89D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C84F200818401CDC001D89D1 /* InfoPlist.strings */; };
 		C84F200C18401CDC001D89D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F200B18401CDC001D89D1 /* main.m */; };
 		C84F201018401CDC001D89D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F200F18401CDC001D89D1 /* AppDelegate.m */; };
-		C84F201318401CDC001D89D1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84F201118401CDC001D89D1 /* Main_iPhone.storyboard */; };
-		C84F201618401CDC001D89D1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84F201418401CDC001D89D1 /* Main_iPad.storyboard */; };
+		C84F201318401CDC001D89D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84F201118401CDC001D89D1 /* Main.storyboard */; };
 		C84F201918401CDC001D89D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84F201818401CDC001D89D1 /* ViewController.m */; };
 		C84F201B18401CDC001D89D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84F201A18401CDC001D89D1 /* Images.xcassets */; };
 		C84F202218401CDC001D89D1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84F202118401CDC001D89D1 /* XCTest.framework */; };
@@ -49,8 +48,7 @@
 		C84F200D18401CDC001D89D1 /* MoneyForPower-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoneyForPower-Prefix.pch"; sourceTree = "<group>"; };
 		C84F200E18401CDC001D89D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C84F200F18401CDC001D89D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C84F201218401CDC001D89D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		C84F201518401CDC001D89D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		C84F201218401CDC001D89D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C84F201718401CDC001D89D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C84F201818401CDC001D89D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C84F201A18401CDC001D89D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -59,8 +57,7 @@
 		C84F202918401CDC001D89D1 /* MoneyForPowerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoneyForPowerTests-Info.plist"; sourceTree = "<group>"; };
 		C84F202B18401CDC001D89D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C84F202D18401CDC001D89D1 /* MoneyForPowerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyForPowerTests.m; sourceTree = "<group>"; };
-		C84F20381840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
-		C84F20391840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main_iPad.strings; sourceTree = "<group>"; };
+		C84F20381840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		C84F203A1840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C84F203B1840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C84F20401840311D001D89D1 /* NSObject+CoeurHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CoeurHelper.h"; sourceTree = "<group>"; };
@@ -134,8 +131,7 @@
 				C84F203718401ECE001D89D1 /* View controllers */,
 				C84F200E18401CDC001D89D1 /* AppDelegate.h */,
 				C84F200F18401CDC001D89D1 /* AppDelegate.m */,
-				C84F201118401CDC001D89D1 /* Main_iPhone.storyboard */,
-				C84F201418401CDC001D89D1 /* Main_iPad.storyboard */,
+				C84F201118401CDC001D89D1 /* Main.storyboard */,
 				C84F201A18401CDC001D89D1 /* Images.xcassets */,
 				C84F200618401CDC001D89D1 /* Supporting Files */,
 			);
@@ -256,6 +252,7 @@
 		C84F1FF418401CDC001D89D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MFP;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Cœur";
 				TargetAttributes = {
@@ -289,9 +286,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C84F201618401CDC001D89D1 /* Main_iPad.storyboard in Resources */,
 				C84F201B18401CDC001D89D1 /* Images.xcassets in Resources */,
-				C84F201318401CDC001D89D1 /* Main_iPhone.storyboard in Resources */,
+				C84F201318401CDC001D89D1 /* Main.storyboard in Resources */,
 				C84F200A18401CDC001D89D1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,22 +375,13 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		C84F201118401CDC001D89D1 /* Main_iPhone.storyboard */ = {
+		C84F201118401CDC001D89D1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C84F201218401CDC001D89D1 /* Base */,
 				C84F20381840271B001D89D1 /* fr */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		C84F201418401CDC001D89D1 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C84F201518401CDC001D89D1 /* Base */,
-				C84F20391840271B001D89D1 /* fr */,
-			);
-			name = Main_iPad.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		C84F202A18401CDC001D89D1 /* InfoPlist.strings */ = {
