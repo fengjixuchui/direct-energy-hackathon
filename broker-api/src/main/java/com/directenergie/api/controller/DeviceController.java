@@ -32,8 +32,7 @@ public class DeviceController {
 	private UserRepository userRepository;
 
 	@RequestMapping(method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
-	public @ResponseBody
-	List<Device> getAll() {
+	public List<Device> getAll() {
 		LOGGER.debug("Fetching Device catalog");
 		return deviceRepository.findAll();
 	}
