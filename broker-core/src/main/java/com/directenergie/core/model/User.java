@@ -24,6 +24,8 @@ public class User extends AbstractEntity {
 
 	private String lastName;
 
+	private String token;
+
 	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
 	private List<Device> devices = new ArrayList<Device>(0);
 
