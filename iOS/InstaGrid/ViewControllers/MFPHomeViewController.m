@@ -15,6 +15,11 @@ NSString *const segueToConso = @"ToConso";
 
 
 @interface MFPHomeViewController ()
+<UICollectionViewDataSource,
+UICollectionViewDelegate>
+
+@property (strong, nonatomic) NSArray *consoArray; // of ConsoModel
+@property (weak, nonatomic) IBOutlet UICollectionView *consoCollectionView;
 
 @end
 
@@ -34,28 +39,25 @@ NSString *const segueToConso = @"ToConso";
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self.consoCollectionView registerNib:[UINib nibWithNibName:@"MFPConsoCell" bundle:nil] forCellWithReuseIdentifier:@"consoCell"];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+#pragma mark UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    [super prepareForSegue:segue sender:sender];
-    
-    /*
-    // instanciating ViewController from StoryBoard
-    UIStoryboard *storyboard = self.storyboard ?: [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"Tuto"];
-    
-    // switching segue called
-    if ([segue.identifier isEqualToString:@"ToTuto"]) {
-    }
-    
-    // accessing segue destination view controller
-    UIViewController * targetVC = segue.destinationViewController;
-    if (targetVC != nil) {
-        //Do preparations here
-    }
-    */
+    return [_consoArray count];
 }
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"consoCell" forIndexPath:indexPath];
+    
+    return cell;
+}
+
+#pragma mark actions
 
 - (IBAction)goAuth:(id)sender
 {

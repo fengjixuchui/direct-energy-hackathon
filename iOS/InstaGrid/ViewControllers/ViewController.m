@@ -27,4 +27,9 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)pop:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end
