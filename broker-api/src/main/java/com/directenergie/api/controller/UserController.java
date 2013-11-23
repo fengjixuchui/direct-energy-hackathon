@@ -11,17 +11,16 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.directenergie.core.services.UserService;
 
-
 @Controller
 @RequestMapping("user")
 public class UserController {
 
-@Inject
-private UserService userService;
+	@Inject
+	private UserService userService;
 
-		@RequestMapping(method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
-		@ResponseStatus(HttpStatus.OK)
-		public void create(String firstName , String lastName , String token) {
-			userService.addUser(firstName, lastName, token);
-		}
+	@RequestMapping(method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
+	@ResponseStatus(HttpStatus.OK)
+	public void create(String pbl, String token) {
+		userService.addUser(pbl, token);
+	}
 }

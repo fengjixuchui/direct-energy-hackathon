@@ -20,11 +20,9 @@ public class User extends AbstractEntity {
 
 	private static final long serialVersionUID = 1L;
 
-	private String firstName;
-
-	private String lastName;
-
 	private String token;
+
+	private String pdl;
 
 	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
 	private List<Device> devices = new ArrayList<Device>(0);
