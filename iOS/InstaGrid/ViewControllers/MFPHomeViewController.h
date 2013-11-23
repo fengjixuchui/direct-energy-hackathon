@@ -1,6 +1,6 @@
 //
-//  MFPDevicesViewController.h
-//  MoneyForPower
+//  MFPHomeViewController.h
+//  InstaGrid
 //
 //  Created by Antoine Cœur on 23/11/2013.
 //  Copyright (c) 2013 Cœur. All rights reserved.
@@ -9,6 +9,6 @@
 #import "ViewController.h"
 
 
-@interface MFPDevicesViewController : ViewController
+@interface MFPHomeViewController : ViewController
 
 @end

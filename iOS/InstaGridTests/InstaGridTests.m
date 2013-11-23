@@ -1,6 +1,6 @@
 //
-//  MoneyForPowerTests.m
-//  MoneyForPowerTests
+//  InstaGridTests.m
+//  InstaGridTests
 //
 //  Created by Antoine Cœur on 23/11/2013.
 //  Copyright (c) 2013 Cœur. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface MoneyForPowerTests : XCTestCase
+@interface InstaGridTests : XCTestCase
 
 @end
 
-@implementation MoneyForPowerTests
+@implementation InstaGridTests
 
 - (void)setUp
 {

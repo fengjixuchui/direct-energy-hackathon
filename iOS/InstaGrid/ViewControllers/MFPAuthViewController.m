@@ -1,20 +1,20 @@
 //
-//  MFPConsoViewController.m
-//  MoneyForPower
+//  MFPAuthViewController.m
+//  InstaGrid
 //
 //  Created by Antoine Cœur on 23/11/2013.
 //  Copyright (c) 2013 Cœur. All rights reserved.
 //
 
-#import "MFPConsoViewController.h"
+#import "MFPAuthViewController.h"
 
 
-@interface MFPConsoViewController ()
+@interface MFPAuthViewController ()
 
 @end
 
 
-@implementation MFPConsoViewController
+@implementation MFPAuthViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
