@@ -7,6 +7,7 @@
 //
 
 #import "MFPHomeViewController.h"
+#import "MainManager.h"
 
 NSString *const segueToTuto = @"ToTuto";
 NSString *const segueToAuth = @"ToAuth";
@@ -66,20 +67,13 @@ UICollectionViewDelegate>
 
 - (IBAction)goConso:(id)sender
 {
-    [self performSegueWithIdentifier:@"ToConso" sender:self];
-}
-
-/*
-- (IBAction)goDevices:(id)sender
-{
-    [self performSegueWithIdentifier:@"ToDevices" sender:self];
-}
-*/
-
-- (IBAction)goTuto:(id)sender
-{
-    //[self performSegueWithIdentifier:@"ToTuto" sender:self];
-    [self performSegueWithIdentifier:@"ToConsoNonAnimated" sender:self];
+    MainManager *manager = [MainManager sharedInstance];
+    if (manager.instaGridAccepted == NO) {
+        [self performSegueWithIdentifier:@"ToConsoNonAnimated" sender:self];
+    }
+    else {
+        [self performSegueWithIdentifier:@"ToConso" sender:self];
+    }
 }
 
 @end

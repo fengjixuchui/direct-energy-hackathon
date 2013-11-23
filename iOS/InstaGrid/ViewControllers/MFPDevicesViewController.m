@@ -47,10 +47,18 @@ UICollectionViewDelegate>
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
     
     MainManager *manager = [MainManager sharedInstance];
     if (manager.instaGridAccepted == NO) {
-        [self performSegueWithIdentifier:@"ToTutoNonAnimated" sender:self];
+        if ([self isMovingToParentViewController])
+        {
+            [self performSegueWithIdentifier:@"ToTutoNonAnimated" sender:self];
+        }
     }
 }
 

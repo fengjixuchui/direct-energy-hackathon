@@ -51,6 +51,7 @@
 		C8CDCA0318412EE500C2903E /* MFPConsoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8CDCA0218412EE500C2903E /* MFPConsoCell.xib */; };
 		C8CDCA0618412F4500C2903E /* ConsoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDCA0518412F4500C2903E /* ConsoModel.m */; };
 		C8CDCA0A1841306200C2903E /* homescreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C8CDCA091841306200C2903E /* homescreen.png */; };
+		C8CDCA0D1841339700C2903E /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDCA0C1841339700C2903E /* ScrollView.m */; };
 		C8F824021840DC080093A9AC /* MFPDevicesService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F824011840DC080093A9AC /* MFPDevicesService.m */; };
 		C8F824051840DC860093A9AC /* DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F824041840DC860093A9AC /* DeviceModel.m */; };
 /* End PBXBuildFile section */
@@ -127,6 +128,8 @@
 		C8CDCA0418412F4500C2903E /* ConsoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoModel.h; sourceTree = "<group>"; };
 		C8CDCA0518412F4500C2903E /* ConsoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoModel.m; sourceTree = "<group>"; };
 		C8CDCA091841306200C2903E /* homescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homescreen.png; sourceTree = "<group>"; };
+		C8CDCA0B1841339700C2903E /* ScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollView.h; sourceTree = "<group>"; };
+		C8CDCA0C1841339700C2903E /* ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollView.m; sourceTree = "<group>"; };
 		C8F824001840DC080093A9AC /* MFPDevicesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPDevicesService.h; sourceTree = "<group>"; };
 		C8F824011840DC080093A9AC /* MFPDevicesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPDevicesService.m; sourceTree = "<group>"; };
 		C8F824031840DC860093A9AC /* DeviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceModel.h; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 				C84F201818401CDC001D89D1 /* ViewController.m */,
 				C865A144184110F600B64BB3 /* NonAnimatedSegue.h */,
 				C865A145184110F600B64BB3 /* NonAnimatedSegue.m */,
+				C8CDCA0B1841339700C2903E /* ScrollView.h */,
+				C8CDCA0C1841339700C2903E /* ScrollView.m */,
 				C84F20571840C0ED001D89D1 /* MFPHomeViewController.h */,
 				C84F20581840C0ED001D89D1 /* MFPHomeViewController.m */,
 				C84F20591840C0ED001D89D1 /* MFPHomeViewController.xib */,
@@ -498,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8F824051840DC860093A9AC /* DeviceModel.m in Sources */,
+				C8CDCA0D1841339700C2903E /* ScrollView.m in Sources */,
 				C865A1411841026300B64BB3 /* MFPDeviceCell.m in Sources */,
 				C84F201918401CDC001D89D1 /* ViewController.m in Sources */,
 				C84F20501840C03B001D89D1 /* MFPDevicesViewController.m in Sources */,
