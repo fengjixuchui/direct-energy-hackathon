@@ -3,11 +3,13 @@ package com.directenergie.core.services;
 import java.util.List;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import com.directenergie.core.model.Device;
 import com.directenergie.core.model.User;
 import com.directenergie.core.repository.UserRepository;
 
+@Named
 public class EffacementService {
 	
 	@Inject

@@ -3,6 +3,8 @@ package com.directenergie.core.services;
 import java.io.IOException;
 import java.util.List;
 
+import javax.inject.Named;
+
 import org.springframework.core.io.DefaultResourceLoader;
 
 import com.directenergie.core.model.Device;
@@ -12,6 +14,7 @@ import com.notnoop.apns.ApnsService;
 import com.notnoop.exceptions.InvalidSSLConfig;
 import com.notnoop.exceptions.RuntimeIOException;
 
+@Named
 public class NotificationServiceImpl implements NotificationService {
 
 	public void sendWarning(User user) throws RuntimeIOException{
