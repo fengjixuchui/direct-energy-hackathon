@@ -15,19 +15,35 @@ public class InitService {
 @Inject
 private UserService userService;
 	
-	public void getMocksUsers(){
+	public List<User> getMocksUsers(){
+		
+		List<User> results = new ArrayList<User>();
+		
 		User user1  = userService.addUser("Jean", "Bono", null);
 		user1.setDevices(getMockDevice());
+		user1.setLatitude(getPositionRandom());
+		user1.setLongitude(getPositionRandom());
+		
 		
 		User user2 = userService.addUser("Germain", "stair", null);
 		user2.setDevices(getMockDevice());
-		
+		user2.setLatitude(getPositionRandom());
+		user2.setLongitude(getPositionRandom());
 		
 		User user3  = userService.addUser("Raymond", "Tagne", null);
 		user3.setDevices(getMockDevice());
+		user3.setLatitude(getPositionRandom());
+		user3.setLongitude(getPositionRandom());
+		
+		return results;
 	}
 	
 	
+	private double getPositionRandom() {
+		return Math.random()*90;
+	}
+
+
 	public List<Device> getMockDevice(){
 		List<Device> devices = new ArrayList<Device>();
 		
@@ -62,8 +78,5 @@ private UserService userService;
 		
 		return devices;
 	}
-	
-	
-	
 	
 }
