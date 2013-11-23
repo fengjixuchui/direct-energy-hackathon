@@ -18,7 +18,7 @@ import com.directenergie.core.model.Device;
 import com.directenergie.core.repository.DeviceRepository;
 
 @Controller
-@RequestMapping("devices")
+@RequestMapping("v1/devices")
 public class DeviceController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(DeviceController.class);
