@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C84F1FFB18401CDC001D89D1"
-            BuildableName = "MoneyForPower.app"
-            BlueprintName = "MoneyForPower"
-            ReferencedContainer = "container:MoneyForPower.xcodeproj">
+            BuildableName = "InstaGrid.app"
+            BlueprintName = "InstaGrid"
+            ReferencedContainer = "container:InstaGrid.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C84F1FFB18401CDC001D89D1"
-            BuildableName = "MoneyForPower.app"
-            BlueprintName = "MoneyForPower"
-            ReferencedContainer = "container:MoneyForPower.xcodeproj">
+            BuildableName = "InstaGrid.app"
+            BlueprintName = "InstaGrid"
+            ReferencedContainer = "container:InstaGrid.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>9E15C9AD-C30C-494F-AC10-81AC6F9CD73A</string>
+	<string>74F88CE0-5A32-4149-A45B-7D950DB87BE4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>MoneyForPower</string>
+	<string>InstaGrid</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A768F5BE-7475-466B-BE13-E21D91F93569</key>
 		<string>https://github.com/romainbiard/direct-energy-hackathon.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS/MoneyForPower.xcworkspace</string>
+	<string>iOS/InstaGrid.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A768F5BE-7475-466B-BE13-E21D91F93569</key>

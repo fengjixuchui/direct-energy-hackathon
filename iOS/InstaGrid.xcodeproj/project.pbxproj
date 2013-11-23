@@ -50,11 +50,11 @@
 /* Begin PBXFileReference section */
 		65296AD14EA646EABB1B87B8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BB360A5D873847BF8E0CC5B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C84F1FFC18401CDC001D89D1 /* MoneyForPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyForPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84F1FFC18401CDC001D89D1 /* InstaGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84F1FFF18401CDC001D89D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C84F200118401CDC001D89D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C84F200318401CDC001D89D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C84F200718401CDC001D89D1 /* MoneyForPower-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoneyForPower-Info.plist"; sourceTree = "<group>"; };
+		C84F200718401CDC001D89D1 /* InstaGrid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaGrid-Info.plist"; sourceTree = "<group>"; };
 		C84F200B18401CDC001D89D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C84F200D18401CDC001D89D1 /* MoneyForPower-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoneyForPower-Prefix.pch"; sourceTree = "<group>"; };
 		C84F200E18401CDC001D89D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,9 +63,9 @@
 		C84F201718401CDC001D89D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C84F201818401CDC001D89D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C84F201A18401CDC001D89D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C84F202018401CDC001D89D1 /* MoneyForPowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyForPowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84F202018401CDC001D89D1 /* InstaGridTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaGridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84F202118401CDC001D89D1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C84F202918401CDC001D89D1 /* MoneyForPowerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoneyForPowerTests-Info.plist"; sourceTree = "<group>"; };
+		C84F202918401CDC001D89D1 /* InstaGridTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaGridTests-Info.plist"; sourceTree = "<group>"; };
 		C84F202D18401CDC001D89D1 /* MoneyForPowerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyForPowerTests.m; sourceTree = "<group>"; };
 		C84F20381840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		C84F203A1840271B001D89D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -121,8 +121,8 @@
 		C84F1FF318401CDC001D89D1 = {
 			isa = PBXGroup;
 			children = (
-				C84F200518401CDC001D89D1 /* MoneyForPower */,
-				C84F202718401CDC001D89D1 /* MoneyForPowerTests */,
+				C84F200518401CDC001D89D1 /* InstaGrid */,
+				C84F202718401CDC001D89D1 /* InstaGridTests */,
 				C84F1FFE18401CDC001D89D1 /* Frameworks */,
 				C84F1FFD18401CDC001D89D1 /* Products */,
 				65296AD14EA646EABB1B87B8 /* Pods.xcconfig */,
@@ -132,8 +132,8 @@
 		C84F1FFD18401CDC001D89D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C84F1FFC18401CDC001D89D1 /* MoneyForPower.app */,
-				C84F202018401CDC001D89D1 /* MoneyForPowerTests.xctest */,
+				C84F1FFC18401CDC001D89D1 /* InstaGrid.app */,
+				C84F202018401CDC001D89D1 /* InstaGridTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C84F200518401CDC001D89D1 /* MoneyForPower */ = {
+		C84F200518401CDC001D89D1 /* InstaGrid */ = {
 			isa = PBXGroup;
 			children = (
 				C84F203F18402A11001D89D1 /* Resources */,
@@ -164,13 +164,14 @@
 				C84F201A18401CDC001D89D1 /* Images.xcassets */,
 				C84F200618401CDC001D89D1 /* Supporting Files */,
 			);
+			name = InstaGrid;
 			path = MoneyForPower;
 			sourceTree = "<group>";
 		};
 		C84F200618401CDC001D89D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C84F200718401CDC001D89D1 /* MoneyForPower-Info.plist */,
+				C84F200718401CDC001D89D1 /* InstaGrid-Info.plist */,
 				C84F200818401CDC001D89D1 /* InfoPlist.strings */,
 				C84F200B18401CDC001D89D1 /* main.m */,
 				C84F200D18401CDC001D89D1 /* MoneyForPower-Prefix.pch */,
@@ -178,19 +179,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C84F202718401CDC001D89D1 /* MoneyForPowerTests */ = {
+		C84F202718401CDC001D89D1 /* InstaGridTests */ = {
 			isa = PBXGroup;
 			children = (
 				C84F202D18401CDC001D89D1 /* MoneyForPowerTests.m */,
 				C84F202818401CDC001D89D1 /* Supporting Files */,
 			);
+			name = InstaGridTests;
 			path = MoneyForPowerTests;
 			sourceTree = "<group>";
 		};
 		C84F202818401CDC001D89D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C84F202918401CDC001D89D1 /* MoneyForPowerTests-Info.plist */,
+				C84F202918401CDC001D89D1 /* InstaGridTests-Info.plist */,
 				C84F202A18401CDC001D89D1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -258,9 +260,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C84F1FFB18401CDC001D89D1 /* MoneyForPower */ = {
+		C84F1FFB18401CDC001D89D1 /* InstaGrid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C84F203118401CDC001D89D1 /* Build configuration list for PBXNativeTarget "MoneyForPower" */;
+			buildConfigurationList = C84F203118401CDC001D89D1 /* Build configuration list for PBXNativeTarget "InstaGrid" */;
 			buildPhases = (
 				23A6F58718BF4648AA8A7974 /* Check Pods Manifest.lock */,
 				C84F1FF818401CDC001D89D1 /* Sources */,
@@ -272,14 +274,14 @@
 			);
 			dependencies = (
 			);
-			name = MoneyForPower;
+			name = InstaGrid;
 			productName = MoneyForPower;
-			productReference = C84F1FFC18401CDC001D89D1 /* MoneyForPower.app */;
+			productReference = C84F1FFC18401CDC001D89D1 /* InstaGrid.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C84F201F18401CDC001D89D1 /* MoneyForPowerTests */ = {
+		C84F201F18401CDC001D89D1 /* InstaGridTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C84F203418401CDC001D89D1 /* Build configuration list for PBXNativeTarget "MoneyForPowerTests" */;
+			buildConfigurationList = C84F203418401CDC001D89D1 /* Build configuration list for PBXNativeTarget "InstaGridTests" */;
 			buildPhases = (
 				C84F201C18401CDC001D89D1 /* Sources */,
 				C84F201D18401CDC001D89D1 /* Frameworks */,
@@ -290,9 +292,9 @@
 			dependencies = (
 				C84F202618401CDC001D89D1 /* PBXTargetDependency */,
 			);
-			name = MoneyForPowerTests;
+			name = InstaGridTests;
 			productName = MoneyForPowerTests;
-			productReference = C84F202018401CDC001D89D1 /* MoneyForPowerTests.xctest */;
+			productReference = C84F202018401CDC001D89D1 /* InstaGridTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -303,14 +305,17 @@
 			attributes = {
 				CLASSPREFIX = MFP;
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Cœur";
+				ORGANIZATIONNAME = Gray;
 				TargetAttributes = {
+					C84F1FFB18401CDC001D89D1 = {
+						DevelopmentTeam = L736NZ7TBC;
+					};
 					C84F201F18401CDC001D89D1 = {
 						TestTargetID = C84F1FFB18401CDC001D89D1;
 					};
 				};
 			};
-			buildConfigurationList = C84F1FF718401CDC001D89D1 /* Build configuration list for PBXProject "MoneyForPower" */;
+			buildConfigurationList = C84F1FF718401CDC001D89D1 /* Build configuration list for PBXProject "InstaGrid" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -324,8 +329,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C84F1FFB18401CDC001D89D1 /* MoneyForPower */,
-				C84F201F18401CDC001D89D1 /* MoneyForPowerTests */,
+				C84F1FFB18401CDC001D89D1 /* InstaGrid */,
+				C84F201F18401CDC001D89D1 /* InstaGridTests */,
 			);
 		};
 /* End PBXProject section */
@@ -421,7 +426,7 @@
 /* Begin PBXTargetDependency section */
 		C84F202618401CDC001D89D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C84F1FFB18401CDC001D89D1 /* MoneyForPower */;
+			target = C84F1FFB18401CDC001D89D1 /* InstaGrid */;
 			targetProxy = C84F202518401CDC001D89D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -533,10 +538,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MoneyForPower/MoneyForPower-Prefix.pch";
-				INFOPLIST_FILE = "MoneyForPower/MoneyForPower-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MoneyForPower/InstaGrid-Prefix.pch";
+				INFOPLIST_FILE = "MoneyForPower/InstaGrid-Info.plist";
+				PRODUCT_NAME = InstaGrid;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -547,10 +554,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MoneyForPower/MoneyForPower-Prefix.pch";
-				INFOPLIST_FILE = "MoneyForPower/MoneyForPower-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MoneyForPower/InstaGrid-Prefix.pch";
+				INFOPLIST_FILE = "MoneyForPower/InstaGrid-Info.plist";
+				PRODUCT_NAME = InstaGrid;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -570,8 +579,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MoneyForPowerTests/MoneyForPowerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MoneyForPowerTests/InstaGridTests-Info.plist";
+				PRODUCT_NAME = InstaGridTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -588,8 +597,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoneyForPower/MoneyForPower-Prefix.pch";
-				INFOPLIST_FILE = "MoneyForPowerTests/MoneyForPowerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MoneyForPowerTests/InstaGridTests-Info.plist";
+				PRODUCT_NAME = InstaGridTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -598,7 +607,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C84F1FF718401CDC001D89D1 /* Build configuration list for PBXProject "MoneyForPower" */ = {
+		C84F1FF718401CDC001D89D1 /* Build configuration list for PBXProject "InstaGrid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C84F202F18401CDC001D89D1 /* Debug */,
@@ -607,7 +616,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C84F203118401CDC001D89D1 /* Build configuration list for PBXNativeTarget "MoneyForPower" */ = {
+		C84F203118401CDC001D89D1 /* Build configuration list for PBXNativeTarget "InstaGrid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C84F203218401CDC001D89D1 /* Debug */,
@@ -616,7 +625,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C84F203418401CDC001D89D1 /* Build configuration list for PBXNativeTarget "MoneyForPowerTests" */ = {
+		C84F203418401CDC001D89D1 /* Build configuration list for PBXNativeTarget "InstaGridTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C84F203518401CDC001D89D1 /* Debug */,
