@@ -11,7 +11,7 @@
                 <viewController id="n17-Jh-gIG" customClass="MFPTutoViewController" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xw4-gn-kSX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1513" y="-1427"/>
+            <point key="canvasLocation" x="1529" y="-731"/>
         </scene>
         <!--Devices View Controller - Equipement-->
         <scene sceneID="Jxb-De-r1L">
@@ -20,11 +20,12 @@
                     <navigationItem key="navigationItem" title="Equipement" id="0RW-BT-eFa"/>
                     <connections>
                         <segue destination="n17-Jh-gIG" kind="modal" identifier="ToTuto" id="iaX-QG-G5b"/>
+                        <segue destination="n17-Jh-gIG" kind="modal" identifier="ToTutoNonAnimated" animates="NO" id="xfy-7g-G7z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcc-Oo-9uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="-467"/>
+            <point key="canvasLocation" x="962" y="-731"/>
         </scene>
         <!--Conso View Controller - Consommation-->
         <scene sceneID="HKz-gf-i65">
@@ -33,11 +34,12 @@
                     <navigationItem key="navigationItem" title="Consommation" id="3Dd-9k-eyz"/>
                     <connections>
                         <segue destination="ZyX-1r-fmN" kind="push" identifier="ToDevices" id="J2p-zf-wbR"/>
+                        <segue destination="ZyX-1r-fmN" kind="custom" identifier="ToDevicesNonAnimated" customClass="NonAnimatedSegue" id="v08-p5-uw4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SK5-Xv-lsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439" y="-6"/>
+            <point key="canvasLocation" x="463" y="-731"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iva-da-81Y">
@@ -60,25 +62,13 @@
                 <viewController id="vXZ-lx-hvc" customClass="MFPHomeViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Accueil Direct Energie" id="nIn-sy-zI5"/>
                     <connections>
-                        <segue destination="FiA-lv-5ka" kind="push" identifier="ToAuth" id="LUn-fT-39y"/>
-                        <segue destination="ZyX-1r-fmN" kind="push" identifier="ToDevices" id="4yf-bJ-hMe"/>
                         <segue destination="4Q8-Gu-vqR" kind="push" identifier="ToConso" id="HRM-Wt-YHa"/>
-                        <segue destination="n17-Jh-gIG" kind="modal" identifier="ToTuto" id="1cL-hp-bXh"/>
+                        <segue destination="4Q8-Gu-vqR" kind="custom" identifier="ToConsoNonAnimated" customClass="NonAnimatedSegue" id="apW-1g-M1w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-103" y="-731"/>
-        </scene>
-        <!--Auth View Controller - Authentification-->
-        <scene sceneID="ehw-xz-pG8">
-            <objects>
-                <viewController id="FiA-lv-5ka" customClass="MFPAuthViewController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Authentification" id="cBR-nY-cCX"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="19G-gt-UND" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="439" y="-1645"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -87,7 +77,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="J2p-zf-wbR"/>
-        <segue reference="iaX-QG-G5b"/>
+        <segue reference="apW-1g-M1w"/>
+        <segue reference="v08-p5-uw4"/>
+        <segue reference="xfy-7g-G7z"/>
     </inferredMetricsTieBreakers>
 </document>

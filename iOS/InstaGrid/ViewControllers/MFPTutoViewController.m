@@ -7,6 +7,7 @@
 //
 
 #import "MFPTutoViewController.h"
+#import "MainManager.h"
 
 
 @interface MFPTutoViewController ()
@@ -45,7 +46,7 @@
     [super viewDidAppear:animated];
     
     // TODO: find a better place to update the contentSize
-    self.tutoScrollView.contentSize = CGSizeMake(self.tutoScrollView.bounds.size.width * 3, self.tutoScrollView.bounds.size.height);
+    self.tutoScrollView.contentSize = CGSizeMake(self.tutoScrollView.bounds.size.width * 4, self.tutoScrollView.bounds.size.height);
 }
 
 #pragma mark - UIScrollViewDelegate methods
@@ -53,6 +54,22 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     int page = ceil(scrollView.contentOffset.x / scrollView.frame.size.width);
     self.tutoPageControl.currentPage = page;
+}
+
+#pragma mark actions
+
+- (IBAction)subscribe:(id)sender {
+    MainManager *manager = [MainManager sharedInstance];
+    manager.instaGridAccepted = YES;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)unsubscribe:(id)sender {
+    MainManager *manager = [MainManager sharedInstance];
+    manager.instaGridAccepted = NO;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

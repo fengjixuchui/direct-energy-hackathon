@@ -20,7 +20,7 @@ import com.directenergie.core.repository.DeviceRepository;
 import com.directenergie.core.repository.UserRepository;
 
 @Controller
-@RequestMapping("devices")
+@RequestMapping("v1/devices")
 public class DeviceController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(DeviceController.class);
