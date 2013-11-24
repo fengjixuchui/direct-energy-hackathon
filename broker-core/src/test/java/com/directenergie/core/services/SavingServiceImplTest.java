@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.inject.Inject;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -20,6 +21,7 @@ public class SavingServiceImplTest {
 	@Inject
 	private SavingService savingService;
 
+	@Ignore
 	@Test
 	public void test() throws RuntimeIOException, InvalidSSLConfig, IOException {
 		savingService.shutDownDevice("21926");
