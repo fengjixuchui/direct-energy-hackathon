@@ -58,4 +58,13 @@
 	NSLog(@"Failed to get token, error: %@", error);
 }
 
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    NSLog(@"notification options %@", userInfo);
+    
+    //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Notification" message:@"Attention" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    //[alert show];
+    
+}
+
 @end

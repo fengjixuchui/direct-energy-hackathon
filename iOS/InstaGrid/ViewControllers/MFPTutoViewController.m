@@ -16,6 +16,9 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *tutoScrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *tutoPageControl;
 
+@property (weak, nonatomic) IBOutlet UIButton *subscribeButton;
+@property (weak, nonatomic) IBOutlet UIButton *unsubscribeButton;
+
 @end
 
 
@@ -39,6 +42,9 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    MainManager *manager = [MainManager sharedInstance];
+    self.unsubscribeButton.hidden = !manager.instaGridAccepted;
 }
 
 - (void)viewDidAppear:(BOOL)animated

@@ -18,6 +18,9 @@ UICollectionViewDelegate>
 @property (strong, nonatomic) NSArray *consoArray; // of ConsoModel
 @property (weak, nonatomic) IBOutlet UICollectionView *consoCollectionView;
 
+@property (weak, nonatomic) IBOutlet UILabel *cashBackLabel;
+@property (weak, nonatomic) IBOutlet UILabel *consoLabel;
+
 @end
 
 
