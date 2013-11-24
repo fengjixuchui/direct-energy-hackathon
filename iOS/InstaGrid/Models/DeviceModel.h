@@ -32,4 +32,6 @@
 //@property (strong, nonatomic) NSDate *modifiedDate;
 @property (strong, nonatomic) NSNumber *version;//int
 
+@property (strong, nonatomic) NSNumber *added;//bool
+
 @end

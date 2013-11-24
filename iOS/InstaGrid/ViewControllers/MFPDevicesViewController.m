@@ -92,6 +92,34 @@ UICollectionViewDelegate>
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    DeviceModel *device = _devicesArray[indexPath.row];
+    
+    device.added = @(![device.added boolValue]);
+    
+    // refresh cell
+    [collectionView reloadItemsAtIndexPaths:@[indexPath]];
+}
+
+/*
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout  *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Adjust cell size for orientation
+    if (UIDeviceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)) {
+        return CGSizeMake(170.f, 170.f);
+    }
+    return CGSizeMake(192.f, 192.f);
+}
+
+#pragma mark rotations
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    [self.devicesCollectionView performBatchUpdates:nil completion:nil];
+}
+*/
+
 #pragma mark actions
 
 - (IBAction)goTuto:(id)sender

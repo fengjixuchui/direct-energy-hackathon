@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *typeImageView;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *inUseImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *addedImageView;
 
 @end
 
@@ -36,6 +37,7 @@
     self.typeImageView.image = [MFPDevicesService deviceImages][object.deviceDefinition.type];
     
     self.inUseImageView.image = [object.inUse boolValue] ? [UIImage imageNamed:@"check"] : [UIImage imageNamed:@""];
+    self.addedImageView.image = [object.added boolValue] ? [UIImage imageNamed:@"check"] : [UIImage imageNamed:@""];
 }
 
 @end

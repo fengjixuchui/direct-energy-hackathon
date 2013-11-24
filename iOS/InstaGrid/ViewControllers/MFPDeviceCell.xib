@@ -19,8 +19,12 @@
                         <rect key="frame" x="20" y="10" width="60" height="60"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYW-qz-TUn">
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYW-qz-TUn">
                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZO-a0-prj">
+                        <rect key="frame" x="60" y="0.0" width="40" height="40"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="wzm-CH-4HF">
@@ -34,6 +38,7 @@
             </view>
             <size key="customSize" width="100" height="100"/>
             <connections>
+                <outlet property="addedImageView" destination="RZO-a0-prj" id="v1U-vQ-Cbr"/>
                 <outlet property="inUseImageView" destination="sYW-qz-TUn" id="5Kq-CK-NYD"/>
                 <outlet property="nameLabel" destination="wzm-CH-4HF" id="6AO-oe-qfg"/>
                 <outlet property="typeImageView" destination="MqX-Q0-naa" id="zUD-R3-TXN"/>
