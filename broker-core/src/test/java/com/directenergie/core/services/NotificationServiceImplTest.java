@@ -5,7 +5,6 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -26,7 +25,7 @@ public class NotificationServiceImplTest {
 	@Inject
 	private InitService initService;
 
-	@Ignore
+	// @Ignore
 	@Test
 	public void testSendWarning() throws RuntimeIOException, InvalidSSLConfig, IOException {
 		List<User> users = initService.createUsers();
