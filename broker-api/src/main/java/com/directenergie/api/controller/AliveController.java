@@ -13,6 +13,6 @@ public class AliveController {
 	@RequestMapping(value = "v1/alive", method = RequestMethod.GET, produces = { MediaType.APPLICATION_JSON_VALUE })
 	@ResponseStatus(HttpStatus.OK)
 	public void alive() {
-
+		
 	}
 }
