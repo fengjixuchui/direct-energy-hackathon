@@ -11,6 +11,8 @@
 
 @interface MFPDevicesService : NSObject
 
++ (NSDictionary *)deviceImages;
+
 - (void)devices:(void (^)(NSArray *devices, NSError *error))completion;
 
 @end

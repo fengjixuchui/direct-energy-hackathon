@@ -51,6 +51,10 @@
 		C8A58BEB18413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A58BE618413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.m */; };
 		C8A58BEC18413F2B003212A6 /* ObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A58BE818413F2B003212A6 /* ObjectModel.m */; };
 		C8A58BED18413F2B003212A6 /* PropertiesRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A58BEA18413F2B003212A6 /* PropertiesRuntimeHelper.m */; };
+		C8AF5BD818417A59004C00F9 /* MFPUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AF5BD718417A59004C00F9 /* MFPUserService.m */; };
+		C8AF5BDA18418194004C00F9 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = C8AF5BD918418194004C00F9 /* check.png */; };
+		C8AF5BDE18418AF6004C00F9 /* MFPDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AF5BDC18418AF6004C00F9 /* MFPDeviceViewController.m */; };
+		C8AF5BDF18418AF6004C00F9 /* MFPDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8AF5BDD18418AF6004C00F9 /* MFPDeviceViewController.xib */; };
 		C8CDCA0118412EC900C2903E /* MFPConsoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDCA0018412EC900C2903E /* MFPConsoCell.m */; };
 		C8CDCA0318412EE500C2903E /* MFPConsoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8CDCA0218412EE500C2903E /* MFPConsoCell.xib */; };
 		C8CDCA0618412F4500C2903E /* ConsoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDCA0518412F4500C2903E /* ConsoModel.m */; };
@@ -70,7 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		545D16AC18416A59009BE32C /* homescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homescreen.png; path = InstaGrid/Resources/homescreen.png; sourceTree = "<group>"; };
+		545D16AC18416A59009BE32C /* homescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homescreen.png; sourceTree = "<group>"; };
 		65296AD14EA646EABB1B87B8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BB360A5D873847BF8E0CC5B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84F1FFC18401CDC001D89D1 /* InstaGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +136,12 @@
 		C8A58BE818413F2B003212A6 /* ObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectModel.m; sourceTree = "<group>"; };
 		C8A58BE918413F2B003212A6 /* PropertiesRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertiesRuntimeHelper.h; sourceTree = "<group>"; };
 		C8A58BEA18413F2B003212A6 /* PropertiesRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertiesRuntimeHelper.m; sourceTree = "<group>"; };
+		C8AF5BD618417A59004C00F9 /* MFPUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPUserService.h; sourceTree = "<group>"; };
+		C8AF5BD718417A59004C00F9 /* MFPUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPUserService.m; sourceTree = "<group>"; };
+		C8AF5BD918418194004C00F9 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		C8AF5BDB18418AF6004C00F9 /* MFPDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPDeviceViewController.h; sourceTree = "<group>"; };
+		C8AF5BDC18418AF6004C00F9 /* MFPDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPDeviceViewController.m; sourceTree = "<group>"; };
+		C8AF5BDD18418AF6004C00F9 /* MFPDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPDeviceViewController.xib; sourceTree = "<group>"; };
 		C8CDC9FF18412EC900C2903E /* MFPConsoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPConsoCell.h; sourceTree = "<group>"; };
 		C8CDCA0018412EC900C2903E /* MFPConsoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPConsoCell.m; sourceTree = "<group>"; };
 		C8CDCA0218412EE500C2903E /* MFPConsoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPConsoCell.xib; sourceTree = "<group>"; };
@@ -173,7 +183,6 @@
 		C84F1FF318401CDC001D89D1 = {
 			isa = PBXGroup;
 			children = (
-				545D16AC18416A59009BE32C /* homescreen.png */,
 				C84F200518401CDC001D89D1 /* InstaGrid */,
 				C84F202718401CDC001D89D1 /* InstaGridTests */,
 				C84F1FFE18401CDC001D89D1 /* Frameworks */,
@@ -277,6 +286,9 @@
 				C865A13F1841026300B64BB3 /* MFPDeviceCell.h */,
 				C865A1401841026300B64BB3 /* MFPDeviceCell.m */,
 				C865A1421841028500B64BB3 /* MFPDeviceCell.xib */,
+				C8AF5BDB18418AF6004C00F9 /* MFPDeviceViewController.h */,
+				C8AF5BDC18418AF6004C00F9 /* MFPDeviceViewController.m */,
+				C8AF5BDD18418AF6004C00F9 /* MFPDeviceViewController.xib */,
 			);
 			name = "View controllers";
 			path = ViewControllers;
@@ -299,6 +311,8 @@
 			children = (
 				C8F824001840DC080093A9AC /* MFPDevicesService.h */,
 				C8F824011840DC080093A9AC /* MFPDevicesService.m */,
+				C8AF5BD618417A59004C00F9 /* MFPUserService.h */,
+				C8AF5BD718417A59004C00F9 /* MFPUserService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -315,6 +329,8 @@
 		C84F203F18402A11001D89D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				545D16AC18416A59009BE32C /* homescreen.png */,
+				C8AF5BD918418194004C00F9 /* check.png */,
 				C8CDCA081841301A00C2903E /* tuto */,
 				C8CDCA0718412FEF00C2903E /* equipment */,
 			);
@@ -458,8 +474,10 @@
 				C84F204C1840C016001D89D1 /* MFPConsoViewController.xib in Resources */,
 				545D16AD18416A5A009BE32C /* homescreen.png in Resources */,
 				C865A1601841225700B64BB3 /* dryer_light_ac_tuto.png in Resources */,
+				C8AF5BDF18418AF6004C00F9 /* MFPDeviceViewController.xib in Resources */,
 				C84F20601840C1DB001D89D1 /* MFPTutoViewController.xib in Resources */,
 				C865A15918411DB800B64BB3 /* freezer_B.png in Resources */,
+				C8AF5BDA18418194004C00F9 /* check.png in Resources */,
 				C865A15518411DB800B64BB3 /* air_conditioning_internal.png in Resources */,
 				C84F201318401CDC001D89D1 /* Main.storyboard in Resources */,
 				C865A15F1841225700B64BB3 /* €€_tuto.png in Resources */,
@@ -527,6 +545,8 @@
 			files = (
 				C8F824051840DC860093A9AC /* DeviceModel.m in Sources */,
 				C8A58BEB18413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.m in Sources */,
+				C8AF5BDE18418AF6004C00F9 /* MFPDeviceViewController.m in Sources */,
+				C8AF5BD818417A59004C00F9 /* MFPUserService.m in Sources */,
 				C8CDCA0D1841339700C2903E /* ScrollView.m in Sources */,
 				C865A1411841026300B64BB3 /* MFPDeviceCell.m in Sources */,
 				C84F201918401CDC001D89D1 /* ViewController.m in Sources */,

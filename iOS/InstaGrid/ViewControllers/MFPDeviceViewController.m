@@ -1,16 +1,16 @@
 //
-//  MFPDeviceCell.m
+//  MFPDeviceViewController.m
 //  InstaGrid
 //
-//  Created by Antoine Cœur on 23/11/2013.
+//  Created by Antoine Cœur on 24/11/2013.
 //  Copyright (c) 2013 Gray. All rights reserved.
 //
 
-#import "MFPDeviceCell.h"
+#import "MFPDeviceViewController.h"
 #import "MFPDevicesService.h"
 
 
-@interface MFPDeviceCell ()
+@interface MFPDeviceViewController ()
 
 @property (strong, nonatomic) IBOutlet UIImageView *typeImageView;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
@@ -20,15 +20,28 @@
 @end
 
 
-@implementation MFPDeviceCell
+@implementation MFPDeviceViewController
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Initialization code
+        // Custom initialization
     }
     return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self bindObject:self.deviceToShow];
 }
 
 - (void)bindObject:(DeviceModel *)object
