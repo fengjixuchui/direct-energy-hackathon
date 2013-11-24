@@ -51,15 +51,17 @@ public class InitService {
 
 		Device result = new Device();
 		DeviceDefinition devdef = new DeviceDefinition();
-		devdef.setName("mon home cinema");
+		devdef.setName("Home cinéma");
 		devdef.setType(DeviceType.TV);
+		devdef.setEstimatedAnnualSavings("70kWh/an");
 		result.setDeviceDefinition(devdef);
 		result.setInUse(false);
 		devices.add(result);
 
 		Device result2 = new Device();
 		DeviceDefinition devdef2 = new DeviceDefinition();
-		devdef2.setName("ma lampe du salon");
+		devdef2.setName("Lampe du salon");
+		devdef2.setEstimatedAnnualSavings("250kWh/an");
 		devdef2.setType(DeviceType.LIGHT);
 		result2.setDeviceDefinition(devdef2);
 		result2.setInUse(false);
@@ -69,6 +71,7 @@ public class InitService {
 		DeviceDefinition devDef3 = new DeviceDefinition();
 		devDef3.setName("Mon chauffe eau");
 		devDef3.setType(DeviceType.BOILER);
+		devDef3.setEstimatedAnnualSavings("1550kWh/an");
 		result3.setDeviceDefinition(devDef3);
 		result3.setInUse(true);
 		devices.add(result3);
