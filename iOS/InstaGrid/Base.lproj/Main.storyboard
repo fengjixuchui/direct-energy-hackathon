@@ -12,21 +12,32 @@
                 <viewController id="n17-Jh-gIG" customClass="MFPTutoViewController" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xw4-gn-kSX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1529" y="-731"/>
+            <point key="canvasLocation" x="1697" y="-1441"/>
         </scene>
-        <!--Devices View Controller - Équipement-->
+        <!--Devices View Controller - Équipements-->
         <scene sceneID="Jxb-De-r1L">
             <objects>
                 <viewController id="ZyX-1r-fmN" customClass="MFPDevicesViewController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Équipement" id="0RW-BT-eFa"/>
+                    <navigationItem key="navigationItem" title="Équipements" id="0RW-BT-eFa"/>
                     <connections>
                         <segue destination="n17-Jh-gIG" kind="modal" identifier="ToTuto" id="iaX-QG-G5b"/>
                         <segue destination="n17-Jh-gIG" kind="modal" identifier="ToTutoNonAnimated" animates="NO" id="xfy-7g-G7z"/>
+                        <segue destination="jJR-ZC-qhI" kind="push" identifier="ToDevice" id="yTE-US-cSJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcc-Oo-9uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="962" y="-731"/>
+        </scene>
+        <!--Device View Controller - Équipement-->
+        <scene sceneID="5dZ-8R-5Fd">
+            <objects>
+                <viewController id="jJR-ZC-qhI" customClass="MFPDeviceViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Équipement" id="9dL-wF-9is"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBC-J4-JdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1565" y="-742"/>
         </scene>
         <!--Conso View Controller - Consommation-->
         <scene sceneID="HKz-gf-i65">
@@ -81,6 +92,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="apW-1g-M1w"/>
         <segue reference="v08-p5-uw4"/>
-        <segue reference="xfy-7g-G7z"/>
+        <segue reference="iaX-QG-G5b"/>
     </inferredMetricsTieBreakers>
 </document>

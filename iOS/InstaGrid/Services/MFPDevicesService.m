@@ -17,7 +17,7 @@ NSString *const orderURL = @"http://62.210.131.112:80/instagrid/api/v1/savings/o
 
 @implementation MFPDevicesService
 
-+(NSDictionary *)deviceImages
++ (NSDictionary *)deviceImages
 {
     static NSMutableDictionary *dic = nil;
     

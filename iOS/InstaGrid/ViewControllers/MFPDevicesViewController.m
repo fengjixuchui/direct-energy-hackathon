@@ -10,6 +10,7 @@
 #import "MFPDevicesService.h"
 #import "MainManager.h"
 #import "MFPDeviceCell.h"
+#import "MFPDeviceViewController.h"
 
 
 @interface MFPDevicesViewController ()
@@ -18,6 +19,8 @@ UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *devicesCollectionView;
 @property (strong, nonatomic) IBOutlet MFPDevicesService *devicesService;
+
+@property (strong, nonatomic) DeviceModel *deviceToShow;
 
 @end
 
@@ -52,6 +55,18 @@ UICollectionViewDelegate>
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+
+    MainManager *manager = [MainManager sharedInstance];
+    if (manager.instaGridAccepted == NO) {
+        if ([self isMovingToParentViewController]) {
+            NSLog(@"a");
+            //[self performSegueWithIdentifier:@"ToTutoNonAnimated" sender:self];
+        }
+        else {
+            NSLog(@"b");
+            [self.navigationController popToRootViewControllerAnimated:NO];
+        }
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -60,9 +75,11 @@ UICollectionViewDelegate>
     
     MainManager *manager = [MainManager sharedInstance];
     if (manager.instaGridAccepted == NO) {
-        if ([self isMovingToParentViewController])
-        {
+        if ([self isMovingToParentViewController]) {
             [self performSegueWithIdentifier:@"ToTutoNonAnimated" sender:self];
+        }
+        else {
+            //[self.navigationController popToRootViewControllerAnimated:NO];
         }
     }
 }
@@ -96,10 +113,17 @@ UICollectionViewDelegate>
 {
     DeviceModel *device = _devicesArray[indexPath.row];
     
+    /*
+    // switch added state
     device.added = @(![device.added boolValue]);
     
     // refresh cell
     [collectionView reloadItemsAtIndexPaths:@[indexPath]];
+    */
+    
+    // showing detail page
+    self.deviceToShow = device;
+    [self performSegueWithIdentifier:@"ToDevice" sender:self];
 }
 
 /*
@@ -121,6 +145,21 @@ UICollectionViewDelegate>
 */
 
 #pragma mark actions
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    [super prepareForSegue:segue sender:sender];
+    
+     // switching segue called
+     if ([segue.identifier isEqualToString:@"ToDevice"]) {
+         // accessing segue destination view controller
+         MFPDeviceViewController * targetVC = segue.destinationViewController;
+         if (targetVC != nil) {
+             // do preparations here
+             targetVC.deviceToShow = self.deviceToShow;
+         }
+     }
+}
 
 - (IBAction)goTuto:(id)sender
 {
