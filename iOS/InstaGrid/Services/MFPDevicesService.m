@@ -39,6 +39,7 @@ NSString *const orderURL = @"http://62.210.131.112:80/instagrid/api/v1/savings/o
 
 - (void)devices:(void (^)(NSArray *devices, NSError *error))completion
 {
+    /*
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
@@ -58,6 +59,12 @@ NSString *const orderURL = @"http://62.210.131.112:80/instagrid/api/v1/savings/o
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completion(nil, error);
     }];
+    */
+    
+    NSArray *responseObjectArray = @[@{@"id":@(1),@"version":@(0),@"inUse":@(false),@"deviceDefinition":@{@"id":@(1),@"version":@(0),@"name":@"mon home cinema",@"type":@"TV",@"estimatedAnnualSavings":[NSNull null]}},@{@"id":@(2),@"version":@(0),@"inUse":@(false),@"deviceDefinition":@{@"id":@(2),@"version":@(0),@"name":@"ma lampe du salon",@"type":@"LIGHT",@"estimatedAnnualSavings":[NSNull null]}},@{@"id":@(3),@"version":@(0),@"inUse":@(true),@"deviceDefinition":@{@"id":@(3),@"version":@(0),@"name":@"Mon chauffe eau",@"type":@"BOILER",@"estimatedAnnualSavings":[NSNull null]}},@{@"id":@(4),@"version":@(0),@"inUse":@(true),@"deviceDefinition":@{@"id":@(4),@"version":@(0),@"name":@"mon lave linge",@"type":@"WASHING_MACHINE",@"estimatedAnnualSavings":[NSNull null]}},@{@"id":@(5),@"version":@(0),@"inUse":@(false),@"deviceDefinition":@{@"id":@(5),@"version":@(0),@"name":@"mon home cinema",@"type":@"TV",@"estimatedAnnualSavings":[NSNull null]}},@{@"id":@(6),@"version":@(0),@"inUse":@(false),@"deviceDefinition":@{@"id":@(6),@"version":@(0),@"name":@"ma lampe du salon",@"type":@"LIGHT",@"estimatedAnnualSavings":[NSNull null]}},@{@"id":@(7),@"version":@(0),@"inUse":@(true),@"deviceDefinition":@{@"id":@(7),@"version":@(0),@"name":@"Mon chauffe eau",@"type":@"BOILER",@"estimatedAnnualSavings":[NSNull null]}},@{@"id":@(8),@"version":@(0),@"inUse":@(true),@"deviceDefinition":@{@"id":@(8),@"version":@(0),@"name":@"mon lave linge",@"type":@"WASHING_MACHINE",@"estimatedAnnualSavings":[NSNull null]}}];
+    
+    NSArray *devices = [DeviceModel objectArrayWithArray:responseObjectArray];
+    completion(devices, nil);
 }
 
 @end

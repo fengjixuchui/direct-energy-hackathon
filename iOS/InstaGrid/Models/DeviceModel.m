@@ -17,19 +17,6 @@
     if (self)
     {
         // init weak typed values (NSNumber, NSDate, NSArray, NSDictionary)
-        
-        /*
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"yyyyMMdd'T'HHmmssZ"];
-        [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
-        
-        if ([dictionary[@"creationDate"] isKindOfClass:[NSString self]]) {
-            self.creationDate = [dateFormatter dateFromString:dictionary[@"creationDate"]];
-        }
-        if ([dictionary[@"modifiedDate"] isKindOfClass:[NSString self]]) {
-            self.modifiedDate = [dateFormatter dateFromString:dictionary[@"modifiedDate"]];
-        }
-        */
     }
     return self;
 }

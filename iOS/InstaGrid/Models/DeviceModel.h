@@ -33,5 +33,6 @@
 @property (strong, nonatomic) NSNumber *version;//int
 
 @property (strong, nonatomic) NSNumber *added;//bool
+@property (strong, nonatomic) NSNumber *extinct;//bool
 
 @end
