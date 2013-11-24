@@ -13,11 +13,7 @@
 
 
 @interface MFPHomeViewController ()
-<UICollectionViewDataSource,
-UICollectionViewDelegate>
 
-@property (strong, nonatomic) NSArray *consoArray; // of ConsoModel
-@property (weak, nonatomic) IBOutlet UICollectionView *consoCollectionView;
 @property (strong, nonatomic) IBOutlet SMWheelControl *wheel;
 
 @end
@@ -39,8 +35,6 @@ UICollectionViewDelegate>
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self.consoCollectionView registerNib:[UINib nibWithNibName:@"MFPConsoCell" bundle:nil] forCellWithReuseIdentifier:@"consoCell"];
-    
     //SMWheelControl *wheel = [[SMWheelControl alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
     //self.wheel = wheel;
     //[wheel addTarget:self action:@selector(wheelDidChangeValue:) forControlEvents:UIControlEventValueChanged];
@@ -49,31 +43,6 @@ UICollectionViewDelegate>
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-}
-
-#pragma mark setters & getters
-
-- (void)setDevicesArray:(NSArray *)devicesArray
-{
-    _consoArray = devicesArray;
-    
-    [self.consoCollectionView reloadData];
-}
-
-#pragma mark UICollectionViewDataSource
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return [_consoArray count];
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    MFPConsoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"consoCell" forIndexPath:indexPath];
-    
-    [cell bindObject:_consoArray[indexPath.row]];
-    
-    return cell;
 }
 
 #pragma mark actions

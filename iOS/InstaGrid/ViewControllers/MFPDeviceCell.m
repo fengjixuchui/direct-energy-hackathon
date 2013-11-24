@@ -30,7 +30,7 @@
 
 - (void)bindObject:(DeviceModel *)object
 {
-    // TODO: 
+    self.deviceLabel.text = object.deviceDefinition.name;
 }
 
 @end

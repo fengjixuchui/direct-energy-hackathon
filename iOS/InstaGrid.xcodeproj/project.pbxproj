@@ -51,6 +51,7 @@
 		C8A58BEB18413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A58BE618413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.m */; };
 		C8A58BEC18413F2B003212A6 /* ObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A58BE818413F2B003212A6 /* ObjectModel.m */; };
 		C8A58BED18413F2B003212A6 /* PropertiesRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A58BEA18413F2B003212A6 /* PropertiesRuntimeHelper.m */; };
+		C8AF5BD818417A59004C00F9 /* MFPUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AF5BD718417A59004C00F9 /* MFPUserService.m */; };
 		C8CDCA0118412EC900C2903E /* MFPConsoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDCA0018412EC900C2903E /* MFPConsoCell.m */; };
 		C8CDCA0318412EE500C2903E /* MFPConsoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8CDCA0218412EE500C2903E /* MFPConsoCell.xib */; };
 		C8CDCA0618412F4500C2903E /* ConsoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CDCA0518412F4500C2903E /* ConsoModel.m */; };
@@ -132,6 +133,8 @@
 		C8A58BE818413F2B003212A6 /* ObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectModel.m; sourceTree = "<group>"; };
 		C8A58BE918413F2B003212A6 /* PropertiesRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertiesRuntimeHelper.h; sourceTree = "<group>"; };
 		C8A58BEA18413F2B003212A6 /* PropertiesRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertiesRuntimeHelper.m; sourceTree = "<group>"; };
+		C8AF5BD618417A59004C00F9 /* MFPUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPUserService.h; sourceTree = "<group>"; };
+		C8AF5BD718417A59004C00F9 /* MFPUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPUserService.m; sourceTree = "<group>"; };
 		C8CDC9FF18412EC900C2903E /* MFPConsoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPConsoCell.h; sourceTree = "<group>"; };
 		C8CDCA0018412EC900C2903E /* MFPConsoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPConsoCell.m; sourceTree = "<group>"; };
 		C8CDCA0218412EE500C2903E /* MFPConsoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPConsoCell.xib; sourceTree = "<group>"; };
@@ -299,6 +302,8 @@
 			children = (
 				C8F824001840DC080093A9AC /* MFPDevicesService.h */,
 				C8F824011840DC080093A9AC /* MFPDevicesService.m */,
+				C8AF5BD618417A59004C00F9 /* MFPUserService.h */,
+				C8AF5BD718417A59004C00F9 /* MFPUserService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -527,6 +532,7 @@
 			files = (
 				C8F824051840DC860093A9AC /* DeviceModel.m in Sources */,
 				C8A58BEB18413F2B003212A6 /* NSObject+setValuesForKeysWithJSONDictionary.m in Sources */,
+				C8AF5BD818417A59004C00F9 /* MFPUserService.m in Sources */,
 				C8CDCA0D1841339700C2903E /* ScrollView.m in Sources */,
 				C865A1411841026300B64BB3 /* MFPDeviceCell.m in Sources */,
 				C84F201918401CDC001D89D1 /* ViewController.m in Sources */,
