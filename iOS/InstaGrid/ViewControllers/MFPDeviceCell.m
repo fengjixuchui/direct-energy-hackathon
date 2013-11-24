@@ -7,12 +7,14 @@
 //
 
 #import "MFPDeviceCell.h"
+#import "MFPDevicesService.h"
 
 
 @interface MFPDeviceCell ()
 
-@property (strong, nonatomic) IBOutlet UIImageView *deviceImageView;
-@property (strong, nonatomic) IBOutlet UILabel *deviceLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *typeImageView;
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *inUseImageView;
 
 @end
 
@@ -30,7 +32,10 @@
 
 - (void)bindObject:(DeviceModel *)object
 {
-    self.deviceLabel.text = object.deviceDefinition.name;
+    self.nameLabel.text = object.deviceDefinition.name;
+    self.typeImageView.image = [MFPDevicesService deviceImages][object.deviceDefinition.type];
+    
+    self.inUseImageView.image = [object.inUse boolValue] ? [UIImage imageNamed:@"check"] : [UIImage imageNamed:@""];
 }
 
 @end
