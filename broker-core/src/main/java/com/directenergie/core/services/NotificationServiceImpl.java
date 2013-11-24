@@ -24,7 +24,7 @@ public class NotificationServiceImpl implements NotificationService {
 							new DefaultResourceLoader().getResource("classpath:APNS.p12").getFile().getAbsolutePath(),
 							".de.").withProductionDestination().build();
 
-			String envoi = "Instagrid Info : equilibrage de la demande en energie nécessaire";
+			String envoi = "Instagrid Info : equilibrage de la demande en energie nécessaire...";
 
 			String payload = APNS.newPayload().alertBody(envoi).build();
 			service.push("8ca0d1336c9a15ef2745f1a3bca072628598aee71ccc96a41a186edaacd95f5d", payload);
